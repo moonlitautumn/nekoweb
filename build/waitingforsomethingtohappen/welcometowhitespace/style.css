@@ -62,13 +62,23 @@ h4{
     image-rendering:crisp-edges
 }
 .asdf{
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     image-rendering:crisp-edges;
     opacity: 0.5;
 }
+.asdf2{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    image-rendering:crisp-edges;
+    opacity: 0.5;
+}
 .asdf:hover{
+    opacity: 1;
+}
+.asdf2:hover{
     opacity: 1;
 }
 a{
