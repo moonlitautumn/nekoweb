@@ -92,7 +92,7 @@
 						}
 					).then(
 						function (json) {
-							songcover.src = json['track']['image']['0']['#text'];
+							songcover.src = json['track']['image']['1']['#text'];
 							dynamlink.href = json['track']['url'];
 							song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
 						}
