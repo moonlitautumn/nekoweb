@@ -185,13 +185,11 @@
 				<h2>
 					webbedsite stats
 				</h2>
-					<h3>
-						<span style="color: var(--accent)" id="stats">
-							loading... 
-						</span>
-					</h3>	
 					<p>
-						visits WOWIE 
+						<span style="color: var(--accent); font-size: 2.4rem; font-weight: 500;" id="stats">
+							loading... 
+						</span>	
+						visits WOWIE! 
 						<span style="color: var(--overlay1)">
 							(pls visit this website more i NEED more attention aaaaaa)
 						</span>
@@ -200,16 +198,16 @@
 
 			<script type="text/javascript">
 				let stats = document.querySelector('#stats');
-				
+				let url2 = 'https://nekoweb.org/api/site/info/sillyivy';
 
-				fetch("https://nekoweb.org/api/site/info/sillyivy")
+				fetch(url2)
 					.then(
 						function (response) {
 							return response.json()
 						}
 					).then(
 						function (json) {
-							stats.src = json['views'];
+							stats.innerHTML = json['views'];
 							
 						}
 					);
