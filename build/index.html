@@ -8,7 +8,7 @@
 		<title>Ivy</title>
 		<link rel="stylesheet" href="style.css">
 		
-	</head> 
+	</head>   
 	<body>   
 		<script src="scripts/oneko.js"></script>
 		<main> 
@@ -92,8 +92,17 @@
 							song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
 						}
 					);
+					
 			</script> 
-			<h2>about meeeeeeeee</h2> 
+			<h2>
+				about meeeeeeeee
+				<span style="font-size: 1.6rem; font-weight: 400;">
+					eeeeee
+				</span>
+				<span style="font-size: 1rem; font-weight: 250;">
+					eeee...
+				</span>
+			</h2> 
 			<h3>
 				my name is
 				<span style="color: var(--accent)">
@@ -169,7 +178,45 @@
 			</div> 
 			<h3>
 				Me &lt;&lt;&lt; <span style="color: var(--accent)">✨gay asf✨</span> 🩷💜💙 🩷🤍🩷 (chronically confused about sexuality -w-')
-			</h3> 
+			</h3>
+
+			<!--visits counter by me!-->
+			<div class="border">
+				<h2>
+					webbedsite stats
+				</h2>
+					<h3>
+						<span style="color: var(--accent)" id="stats">
+							loading... 
+						</span>
+					</h3>	
+					<p>
+						visits WOWIE 
+						<span style="color: var(--overlay1)">
+							(pls visit this website more i NEED more attention aaaaaa)
+						</span>
+					</p>
+			</div> 
+
+			<script type="text/javascript">
+				let stats = document.querySelector('#stats');
+				
+
+				fetch("https://nekoweb.org/api/site/info/sillyivy")
+					.then(
+						function (response) {
+							return response.json()
+						}
+					).then(
+						function (json) {
+							stats.src = json['views'];
+							
+						}
+					);
+
+			</script>
+
+			
 			<h2>
 				Favourite things
 			</h2> 
@@ -244,8 +291,9 @@
 				<a href="https://status.cafe">
 					<img src="https://status.cafe/assets/button.png" class="friends-img">
 				</a>
-	
-				
+				<a href="https://nekoweb.org/">
+					<img src="https://nekoweb.org/assets/buttons/button6.gif" class="friends-img">
+				</a>
 			</div>
 			<div class="friends">
 				<iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31"></iframe>		
