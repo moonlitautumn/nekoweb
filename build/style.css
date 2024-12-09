@@ -96,7 +96,7 @@ li{
 }
 .border{
     border:solid 5px var(--accent);
-    padding:.5rem
+    padding:1rem
 }
 header{
     margin:0;
@@ -145,6 +145,11 @@ p.smth{
     padding-left:0;
     font-size:1rem;
     font-weight:200
+}
+.mari {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 .spinny{
     margin:0 auto;
