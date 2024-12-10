@@ -15,10 +15,10 @@ main{
     padding:1rem;
     font-size:20px;
     line-height:1.6;
-    width:80%;
+    width:90%;
     display:flex;
     justify-content:center;
-    max-width:500px;
+    max-width:2000px;
     margin:auto;
     flex-direction:column;
     image-rendering:crisp-edges;
@@ -67,7 +67,7 @@ h4{
     bottom: 20px;
     left: 20px;
     image-rendering:crisp-edges;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 .asdf2{
     position: fixed;
@@ -83,14 +83,14 @@ h4{
     opacity: 1;
 }
 a{
-    color:#000;
-    text-decoration:none
+    color:#FFF;
+    text-decoration:underline
 }
 a:link,a:visited{
-    text-decoration: none;
-    color:#000
+    text-decoration: underline;
+    color:#fff
 }
 a:hover,a:active{
-    text-decoration: none;
-    color: #000;
+    text-decoration: underline;
+    color: #fff;
 }
