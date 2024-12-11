@@ -43,7 +43,7 @@ hr.solid{
     border-radius:2px
 }
 body{
-    color:var(--text);
+    color:#fff;
     font-family:Strawberry,Inter,Avenir,Helvetica,Arial,sans-serif;
     text-align:left;
     image-rendering:crisp-edges
