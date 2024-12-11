@@ -168,6 +168,7 @@ p.smth{
     padding: .5em;
     background-color: var(--base);
     border: 5Px solid var(--accent);
+    margin-bottom: 1rem;
 }
 #statuscafe-username {
     margin-bottom: .5em;
