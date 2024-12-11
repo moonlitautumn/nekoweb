@@ -164,6 +164,17 @@ p.smth{
 .spinny2 span{
     animation-delay:2.5s}@keyframes spinny{0%{transform:translate(0)}to{transform:translate(-100%)}
 }
+#statuscafe {
+    padding: .5em;
+    background-color: var(--base);
+    border: 5Px solid var(--accent);
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
 footer{
     background-color:var(--mantle);
     padding:1rem;
