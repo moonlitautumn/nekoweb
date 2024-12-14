@@ -111,9 +111,10 @@ a:hover,a:active{
         opacity 1s ease-in-out,
         color 1s ease-in-out ;
 
-    font-size:2rem;
-    font-weight:600;
+    font-size:2.5rem;
+    font-weight:400;
     text-align: left;
+    text-decoration: none;
 }
 .input:focus{
     opacity: 1;
