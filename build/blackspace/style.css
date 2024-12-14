@@ -94,6 +94,8 @@ a:hover,a:active{
     color: #fff;
 }
 .input{
+
+    align-self: center;
     width: 50%;
     padding: 1rem;
     border: 5px solid #fff;
@@ -102,7 +104,10 @@ a:hover,a:active{
     opacity: 0.5;
     color: #fff;
     font-family:Omori;
-    transition: width,border,opacity 1s ease-in;
+    transition: 
+        width 1s ease-in-out, 
+        border 1s ease-in-out, 
+        opacity 1s ease-in-out;
     font-size:2rem;
     font-weight:600;
     text-align: left;
