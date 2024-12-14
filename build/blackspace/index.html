@@ -7,12 +7,8 @@
 		<title>you have been living here for as long as you can remember..</title>
         <link rel="stylesheet" href="style.css">
 	</head>   
-	<body>   
-		<main> 
-            <h1>
-                there is <span id="change">nothing</span> here
-            </h1>
-            <!--out of bounds-->
+	<body>  
+         <!--out of bounds-->
             <!--
                 what is the point of this place? nobody knows. 
                 its empty of any sort of content or anything of meaning but it still exists, 
@@ -22,7 +18,12 @@
                 either way the void only exists because you observe it, once you leave this place 
                 it will be destroyed just to be created again on your next visit.
             -->
-            <textarea class="input" onchange onpropertychange onkeyuponpaste oninput="something()"></textarea>
+		<main> 
+            <h1>
+                there is <span id="change">nothing</span> here
+            </h1>
+            
+            <textarea class="input" onchange onpropertychange onkeyuponpaste oninput="something()" rows="10"></textarea>
 
             <script>
                 let thing = document.querySelector('#change');
