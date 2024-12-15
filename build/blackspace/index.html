@@ -36,13 +36,18 @@
                     thing2.innerHTML = ".";
                     everything.innerHTML = "is";
                 }
+                function sleep(ms) {
+                    return new Promise(resolve => setTimeout(resolve, ms));
+                }
                 function voidd() {
                     
                     if (empy.value != ""){
-                        empy.value = "";
                         everything.innerHTML = "was";
+                        
+                        sleep(1000).then(() => { 
+                            empy.value = "";
+                        });
                     }
-                    
                 }
             </script>
             <audio loop autoplay>
