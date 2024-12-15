@@ -123,7 +123,7 @@ a:hover,a:active{
 }
 .input:focus{
     opacity: 1;
-    border: 5px solid #f00;
+    border: 5px solid #FF4B47;
     width: 80%;
     color: #fff;
     cursor: text;
