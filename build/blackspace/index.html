@@ -34,10 +34,15 @@
                 function something() {
                     thing.innerHTML = "something";
                     thing2.innerHTML = ".";
+                    everything.innerHTML = "is";
                 }
                 function voidd() {
-                    empy.value = "";
-                    everything.innerHTML = "was";
+                    
+                    if (empy.value != ""){
+                        empy.value = "";
+                        everything.innerHTML = "was";
+                    }
+                    
                 }
             </script>
             <audio loop autoplay>
