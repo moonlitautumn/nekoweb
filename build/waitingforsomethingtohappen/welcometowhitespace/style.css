@@ -1,5 +1,5 @@
 @font-face{
-    font-family:Omori;
+    font-family:Omori2;
     src:url("OMORI_GAME2.ttf");
     font-weight:400;
     font-style:normal;
@@ -10,7 +10,7 @@ html{
 }
 main{
     color: #000;
-    font-family:Omori;
+    font-family:Omori2;
     padding:1rem;
     font-size:20px;
     line-height:1.6;
