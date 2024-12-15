@@ -21,20 +21,23 @@
             <!--scream into the void-->
 		<main> 
             <h1>
-                there is <span id="change">nothing</span> here..<span id="change2">?</span
+                there <span id="bye">is</span> <span id="change">nothing</span> here..<span id="change2">?</span>
             </h1>
             
-            <textarea class="input"id='empty' onchange onpropertychange onkeyuponpaste oninput="something()" rows="10" spellcheck="false" autocomplete='off'></textarea>
+            <textarea class="input"id='empty' onchange onpropertychange onkeyuponpaste oninput="something()" rows="10" spellcheck="false" autocomplete='off' onfocusout="voidd()"></textarea>
 
             <script>
                 let thing = document.querySelector('#change');
                 let thing2 = document.querySelector('#change2');
+                let everything = document.querySelector('#bye');
+                let empy = document.getElementById("empty");
                 function something() {
                     thing.innerHTML = "something";
                     thing2.innerHTML = ".";
                 }
                 function voidd() {
-                    document.getElementById("empty").reset();
+                    empy.value = "";
+                    everything.innerHTML = "was";
                 }
             </script>
             <audio loop autoplay>
