@@ -33,6 +33,10 @@ h1{
     margin-bottom:1rem;
     text-align: center;
 }
+.underline{
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
 h2{
     font-size:2.4rem;
     font-weight:600
