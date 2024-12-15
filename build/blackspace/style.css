@@ -67,6 +67,7 @@ h4{
     left: 20px;
     image-rendering:crisp-edges;
     opacity: 0.5;
+    rotate: 180deg;
 }
 .asdf2{
     position: fixed;
@@ -74,6 +75,7 @@ h4{
     right: 20px;
     image-rendering:crisp-edges;
     opacity: 0.5;
+    rotate: 180deg;
 }
 .asdf:hover{
     opacity: 1;
