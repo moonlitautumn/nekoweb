@@ -66,17 +66,17 @@ h4{
     bottom: 20px;
     left: 20px;
     image-rendering:crisp-edges;
-    opacity: 0.05;
+    opacity: 0.8;
 }
 .asdf2{
     position: fixed;
     bottom: 20px;
     right: 20px;
     image-rendering:crisp-edges;
-    opacity: 0.5;
+    opacity: 1;
 }
 .asdf:hover{
-    opacity: 0.2;
+    opacity: 1;
 }
 .asdf2:hover{
     opacity: 1;
@@ -101,7 +101,7 @@ a:hover,a:active{
     border: 5px solid #fff;
     background-color: #000;
     outline: none;
-    opacity: 0.05;
+    opacity: 0.03;
     color: #000;
     font-family:Omori;
 
@@ -116,9 +116,13 @@ a:hover,a:active{
     text-align: left;
     text-decoration: none;
 }
+.input:hover{
+    cursor:grab;
+}
 .input:focus{
     opacity: 1;
     border: 5px solid #f00;
     width: 100%;
     color: #fff;
+    cursor: text;
 }
