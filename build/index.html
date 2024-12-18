@@ -13,12 +13,20 @@
 		<script src="scripts/lastfm.js"></script>
 		<script src="scripts/snowww.js"></script>
 		<script src="scripts/time.js" defer></script>
+		<script src="scripts/soundon.js"></script>
 
 		<span class="mari">
 			<a href="waitingforsomethingtohappen/index.html">
 				<img src="mari.png" width="32px" height="32px" >
 			</a>
 		</span>
+
+		<p>
+			<span id="byebye" onclick="unmuteambiance()">
+				...
+			</span>
+		</p>
+		
 		
 		<main> 
 			<h1>
@@ -68,7 +76,7 @@
 					</span> 
 				</p> 
 			</div> 
-			<audio controls autoplay loop> 
+			<audio controls autoplay muted loop id="ambiance"> 
 				<source src="celeste.opus">
 					Your browser does not support the audio element. :(
 			</audio> 
@@ -87,7 +95,7 @@
 					</a> 
 				</p> 
 				<p>
-					status: <span id="timeago" style="color: var(--accent); font-size: 2.4rem; font-weight: 500;">loading...</span>
+					status: <span id="timeago" style="color: var(--accent);">loading...</span>
 				</p>
 			</div> 
 			<!-- old lastfm api call function! 
