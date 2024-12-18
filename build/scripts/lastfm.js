@@ -27,7 +27,7 @@ function fetchNowPlaying() {
             document.getElementById('dynamlink').href = dynamlink;
             document.getElementById('songcover').src = songcover;
 
-            document.querySelector('#song').innerHTML = songName;
+            document.getElementById('song').innerHTML = songName;
         }
     })
     .catch(error => {
