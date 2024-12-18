@@ -1,12 +1,12 @@
-var audioElm = document.getElementById('ambiance'); 
-var hide = document.getElementById('byebye'); 
+var audio = document.getElementById('ambiance'); 
+var hidee = document.getElementById('byebye'); 
 
 function unmuteambiance() {
-	if (audioElm.muted) {
-    	audioElm.muted = false;
-        hide.innerText = "unmuted ^^";
+	if (audio.muted = true) {
+    	audio.muted = false;
+        hidee.innerHTML = "unmuted ^^";
 	} else {
-        audioElm.muted = true;
-        hide.innerText = "muted...";
+        audio.muted = true;
+        hidee.innerHTML = "muted...";
     }
 }
