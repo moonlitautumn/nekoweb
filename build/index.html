@@ -10,6 +10,8 @@
 	</head>   
 	<body>   
 		<script src="scripts/oneko.js"></script>
+		<script src="scripts/lastfm.js"></script>
+
 		<span class="mari">
 			<a href="waitingforsomethingtohappen/index.html">
 				<img src="mari.png" width="32px" height="32px" >
@@ -72,21 +74,25 @@
 				<p>
 					latest played song on
 					<a href="https://www.last.fm/user/sillygirlivy" target="_blank">last.fm:</a> 
-					<!--
-						powered by https://github.com/biancarosa/lastfm-last-played
-						@biancarosa (THANK YOU SO SO MUCH FOR MAKING THIS)
-					--> 
 				</p> 
 				<p>
 					<img src="#" id="songcover"> &gt;&gt;
 						
 					<a href="#" id="dynamlink"> 
-						<span id="song">
+						<span id="#song">
 							loadinggg...
 						</span> 
 					</a> 
 				</p> 
+				<p>
+					status: <span id="timeago">loading...</span>
+				</p>
 			</div> 
+			<!-- old lastfm api call function! 
+
+			powered by https://github.com/biancarosa/lastfm-last-played
+			@biancarosa (THANK YOU SO SO MUCH FOR MAKING THIS)
+
 			<script type="text/javascript">
 				let user = 'sillygirlivy';
 				let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
@@ -108,6 +114,7 @@
 					);
 					
 			</script> 
+			-->
 			<h2>
 				about meeeeeeeee
 				<span style="font-size: 1.6rem; font-weight: 400;">
