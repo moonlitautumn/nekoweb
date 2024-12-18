@@ -1,4 +1,4 @@
-var audio = document.getElementById('hmmmm'); 
+let audio = document.getElementById('plspls'); 
 var hidee = document.getElementById('byebye'); 
 
 function unmuteambiance() {
