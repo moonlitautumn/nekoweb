@@ -14,10 +14,10 @@ function fetchNowPlaying() {
         if (recentTracks.length > 0) {
             const nowPlaying = recentTracks[0];
             
-            const songName = nowPlaying.name + ' - ' + nowPlaying.json['track']['artist']['#text'];
+            const songName = nowPlaying.name + ' - ' + nowPlaying.track.artist['#text'];
             
-            const songcover = nowPlaying.json['track']['image']['1']['#text'];
-            const dynamlink = nowPlaying.json['track']['url'];
+            const songcover = nowPlaying.track.image['1']['#text'];
+            const dynamlink = nowPlaying.track.url;
 
             const timeAgo = nowPlaying.date ? calculateTimeAgo(nowPlaying.date.uts) : '(now playing!)'; // Check if date exists
             
