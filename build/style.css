@@ -43,7 +43,7 @@
 html{
     font-family:system-ui,sans-serif;
     background:#112;
-    cursor:url("mouse.png"),pointer;
+    cursor:url("mouse.png"),default;
 }
 code{
     font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace
@@ -94,7 +94,7 @@ p,ul{
     font-weight:400
 }
 .mewo{
-    cursor:grab
+    cursor:url("pet.png"), grab;
 }
 li{
     margin-bottom:1rem
@@ -111,7 +111,8 @@ a{
     color:var(--accent);
     transition:text-decoration-color 1s ease,color 1s ease;
     text-decoration-color:transparent;
-    text-decoration:underline
+    text-decoration:underline;
+    cursor:url("pointy.png"),pointer;
 }
 a:link,a:visited{
     text-decoration-color:transparent;

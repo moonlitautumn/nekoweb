@@ -6,7 +6,6 @@
 		<link rel="icon" href="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/favicon.ico">
 		<title>waiting for something to happen...?</title>
 		<link rel="stylesheet" href="style.css">
-		
 	</head>   
 	<body>
 		<script src="scripts/oneko.js"></script>
@@ -14,23 +13,21 @@
 		<script src="scripts/snowww.js"></script>
 		<script src="scripts/time.js" defer></script>
 		<script src="scripts/soundon.js"></script>
-
+		<script src="scripts/why.js"></script>
+		<script src="scripts/ost.js"></script>
 		<span class="mari">
 			<a href="waitingforsomethingtohappen/index.html">
 				<img src="mari.png" width="32px" height="32px" >
 			</a>
 		</span>
-
 		<p>
 			<span id="byebye" onclick="unmuteambiance()">
-				unmuted ^^ (check browser!)
+				wind unmuted ^^ (check browser!)
 			</span>
 		</p>
 		<audio id="rain" autoplay loop>
 			<source src="cold.opus">
 		</audio>
-		
-		
 		<main> 
 			<h1>
 				Hiiii &lt;3 🌸🤍  . ݁₊ ⊹ . ݁˖ . ݁
@@ -79,9 +76,13 @@
 					</span> 
 				</p> 
 			</div> 
-			<audio controls loop > 
+			<div class="border" onclick="osttoggle()">
+				<p>
+					ost status: (<span id="toggle">muted :(</span> <span id="byee" style="color: var(--overlay1);">click here to toggle!)</span>
+				</p>
+			</div>
+			<audio id="ost" autopĺay muted loop > 
 				<source src="celeste.opus">
-					Your browser does not support the audio element. :(
 			</audio>
 			<div class="header__inner"> 
 				<p>
@@ -129,30 +130,25 @@
 						</a> 
 					</span> 
 				</h3>
-
 				<div id="vocaring">
 					<script src="https://webring.adilene.net/widget.js">
-
 					</script>
 				</div>
 			</div>
+			<!--statuscafe start!-->
 			<div id="statuscafe">
 				<div id="statuscafe-username">
 				</div>
 				<div id="statuscafe-content"></div>
 			</div>		
-			
 			<script src="https://status.cafe/current-status.js?name=sillyivy" defer>
-
 			</script>
+			<!--statuscafe end!-->
 			<div class="border" style="margin-bottom: 1rem;">
 				<iframe src="https://lilithdev.neocities.org/shrine/vg/nso/apps/music?list=PLrEiDOnraDDvGMEp21qjcby79c5BXlSDe" style="width: calc(100% - 16px * 2);height: 108px;display: block;margin:16px;">
 				</iframe>
-				<p style="margin: 0; margin-left: 1.5rem;">tyyyy <a href="https://lilithdev.neocities.org">lilithdev!</a></p>
-
-				
+				<p style="margin: 0; margin-left: 1.5rem;">tyyyy <a href="https://lilithdev.neocities.org">lilithdev!</a>(btw i LOVE your website!)</p>	
 			</div>
-			
 			<div class="border"> 
 				<h2>whoaaa who is this person???</h2> 
 				<p>
@@ -226,15 +222,9 @@
 					<span style="color: var(--accent);">dont forget to explore with devtools on!</span>
 				</p>
 			</div> 
-			<script type="text/javascript">
-				function why() {
-					alert("why? why would you want that :sob:")
-				}
-			</script>
 			<h3>
 				Me &lt;&lt;&lt; <span style="color: var(--accent)">✨gay asf✨</span> 🩷💜💙 🩷🤍🩷 (chronically confused about sexuality -w-')
 			</h3>
-
 			<!--visits counter by me!-->
 			<div class="border">
 				<h2>
@@ -249,7 +239,6 @@
 							(pls visit this website more i NEED more attention aaaaaa)
 						</span>
 					</p>
-
 					<hr class="solid">
 					<p>
 						(18/12/2024) <br>
@@ -257,18 +246,15 @@
 						- added #####! <br>
 						- added wind sfx! <br>
 						- improved last fm api call function<br>  
-						- improved colours (tyy Owen and Remi!)<br>
-						
+						- improved colours (tyy Owen and Remi!)<br>	
 						<span style="color: var(--overlay1)">
 							credits for most of the code go to <a href="https://blackspace.nekoweb.org">blackspace.nekoweb.org!!</a>
 						</span>
 					</p>
 			</div> 
-
 			<script type="text/javascript">
 				let stats = document.querySelector('#stats');
 				let url2 = 'https://nekoweb.org/api/site/info/sillyivy';
-
 				fetch(url2)
 					.then(
 						function (response) {
@@ -276,14 +262,10 @@
 						}
 					).then(
 						function (json) {
-							stats.innerHTML = json['views'];
-							
+							stats.innerHTML = json['views'];		
 						}
 					);
-
 			</script>
-
-			
 			<h2>
 				Favourite things
 			</h2> 
@@ -350,7 +332,6 @@
 				<a href="https://strovi.neocities.org/">
 					<img src="https://strovi.neocities.org/flair/button.png" class="friends-img">
 				</a>
-	
 				<a href="https://vencord.dev/" title="best discord client ever!">
 					<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/vencord.png" class="friends-img">
 				</a>
@@ -368,13 +349,11 @@
 				</a>
 			</div>
 			<div class="friends">
-				<iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31"></iframe>		
-				
+				<iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31"></iframe>						
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/handcoded.png" class="friends-img" title="so. much. WORK (its 4:30am)">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/girlsnow.png" class="friends-img">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/button-torrents.gif" class="friends-img" title="torrents = best file transfer protocol">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/transnow2.gif" class="friends-img">
-				
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/asexuals_now.gif" class="friends-img" title="ASEXUAL PRIDEEE!">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/ai.gif" class="friends-img" title="FUCK AI">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/hatems.gif" class="friends-img" title="TBH FUCK CAPITALISM">
@@ -389,7 +368,6 @@
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/queer.png" class="friends-img" title="queer asf!">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/void.gif" class="friends-img" title="no cuz honestly">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/kitten88.gif" class="friends-img" title="me">
-				
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/windose.png" class="friends-img" title="shes so me frrr">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/nonbinaryyyy.png" class="friends-img" title="if im half enby does that mean im a quartery :O">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/mafumafu.gif" class="friends-img" title="I WANNA BE A GIRL WOOOO">
@@ -401,19 +379,13 @@
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/dramaturgie.gif" class="friends-img" title="me when the when the me at ">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/diva.png" class="friends-img" title="best vocaloid!!! (sorry flower xD)">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/buttcertificate.gif" class="friends-img" title="heheheheheee">
-				
-				<!--
-					<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/tran.png" class="friends-img" title="hehehee more gay flags!">
-				-->
-				
+				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/tran.png" class="friends-img" title="hehehee more gay flags!">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/wow_wow.gif" class="friends-img" title="whoaaaa">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/y2k_site_badge.gif" class="friends-img" title="YUME NIKI">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/9YP8fnM.png" class="friends-img" title="mlp be like">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/animegay.gif" class="friends-img" title="ehehee">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/anti_button.gif" class="friends-img" title="i hate myself">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/antinft_002.gif" class="friends-img" title="NO NFTS HERE">
-	
-				
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/botao.gif" class="friends-img" title="... i forgot :(">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/brothings.gif" class="friends-img" title="whaaa ofc its not gay!">
 				<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/toebeans_now.gif" class="friends-img" title="CATS ARE SO AWESOME AHGDAKJHSGFDUJ">
@@ -421,9 +393,6 @@
 				<a href="https://moonlitautumn.github.io/webbb/asdfasdfasdfasdf">
 					<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/starbage3.gif" class="friends-img" title="heyaa!">
 				</a>
-				
-	
-	
 			</div>
 			<hr class="solid">
 			<div class="friends">
