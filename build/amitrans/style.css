@@ -78,7 +78,7 @@ h4{
     font-weight:400
 }
 p,ul{
-    color:var(--subtext1);
+    color:#fff;
     font-size:1.6rem;
     font-weight:400
 }
@@ -170,6 +170,7 @@ footer{
     top: 20px;
     left: 20px;
     cursor: pointer;
+    color:#fff;
 }
 #byebye:hover {
     opacity: 1;
