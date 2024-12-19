@@ -2,7 +2,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 function message() {
-    const soundeffect = document.getElementById('ping');
+    let soundeffect = document.getElementById('ping');
     sleep(2000).then(() => { 
         soundeffect.play();
         alert('sorryyyy')
