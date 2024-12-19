@@ -183,9 +183,10 @@ p.smth{
 
 }
 #statuscafe-content {
-    margin: 0 1em 0.5em 1em;
+    margin: 0 1em 0.5em 2em;
     font-size:1.6rem;
-    font-weight:400
+    font-weight:400;
+    color: var(--overlay1)
 }
 footer{
     background-color:var(--mantle);
