@@ -38,7 +38,8 @@
     --crust: #11111b
 }
 :root{
-    --accent: var(--pink)
+    --accent: var(--pink);
+    cursor:url("mouse.png"),default;
 }
 html{
     font-family:system-ui,sans-serif;
