@@ -9,8 +9,16 @@
 	<body>   
         <!--you hacker girl! dont you know what privacy is??-->
         <style>
+            @font-face{
+                font-family:Omori2;
+                src:url("welcometowhitespace/OMORI_GAME2.ttf");
+                font-weight:400;
+                font-style:normal;
+                font-display:swap
+            }
             html{
-                background: #000000
+                background: #000000;
+                font-family:Omori2;
             }
             .mari{
                 position: absolute;
@@ -28,8 +36,24 @@
             .asdf:hover{
                 opacity: 0.25;
             }
+            #byebye {
+                opacity: 0.8;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                cursor: pointer;
+            }
+            #byebye:hover {
+                opacity: 1;
+            }
         </style>
-        <audio loop autoplay>
+        <script src="../scripts/soundon.js"></script>
+        <p>
+			<span id="byebye" onclick="unmuteambiance()">
+				muted...
+			</span>
+		</p>
+        <audio id="rain" loop autoplay muted>
             <source src="Event_maris_theme.ogg" type="audio/ogg">
         </audio>
 		<main> 
