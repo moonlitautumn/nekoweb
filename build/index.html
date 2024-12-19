@@ -9,107 +9,6 @@
 		
 	</head>   
 	<body>
-		<!-- SCM Music Player https://www.scmplayer.net 
-		 
-		======removed for security reasons======
-
-		i'll make my own version of this once i have the time ^^
-	
-		<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
-			data-config="{
-				'skin':'skins/black/skin.css',
-				'volume':20,
-				'autoplay':false,
-				'shuffle':true,
-				'repeat':1,
-				'placement':'top',
-				'showplaylist':false,
-				'playlist':[
-					{
-						'title':'emotionless wind up doll + butch for butch',
-						'url':'https://youtu.be/B16uy8bZmlA'
-					},
-					{
-						'title':'rio romeo - absence',
-						'url':'https://www.youtube.com/watch?v=UU_EJZAmaKI'
-					},
-					{
-						'title':'doja cat - 4morant',
-						'url':'https://www.youtube.com/watch?v=5qNgbIGsrtM'
-					},
-					{
-						'title':'wut i want',
-						'url':'https://www.youtube.com/watch?v=11iIJ8uSFTw'
-					},
-					{
-						'title':'haunt me x3',
-						'url':'https://www.youtube.com/watch?v=4yHuDKlcn-k'
-					},
-					{
-						'title':'unpledged alliance',
-						'url':'https://www.youtube.com/watch?v=disASihCEtw'
-					},
-					{
-						'title':'fantastic phantasm',
-						'url':'https://www.youtube.com/watch?v=dAcOb9zOyAc'
-					},
-					{
-						'title':'when both answers are wrong',
-						'url':'https://youtu.be/WJd9AgC7XmU'
-					},
-					{
-						'title':'bravocat confesses',
-						'url':'https://youtu.be/GwMVHUUmuyA'
-					},
-					{
-						'title':'boa duvet',
-						'url':'https://youtu.be/Ava0duwBsZo'
-					},
-					{
-						'title':'comfort chain',
-						'url':'https://www.youtube.com/watch?v=8b-WwN4H7lE'
-					},
-					{
-						'title':'ah? ah!',
-						'url':'https://www.youtube.com/watch?v=q55PZsq79bE'
-					},
-					{
-						'title':'nice2knowya',
-						'url':'https://youtu.be/qRazI6rA2Y0'
-					},
-					{
-						'title':'i cant handle change',
-						'url':'https://www.youtube.com/watch?v=f1V0cQFyC7E'
-					},
-					{
-						'title':'i <3 u',
-						'url':'https://www.youtube.com/watch?v=bPNl3BxKm_c'
-					},
-					{
-						'title':'please help me',
-						'url':'https://www.youtube.com/watch?v=kII5AjrI4mE'
-					},
-					{
-						'title':'https://www.youtube.com/watch?v=21Zsm0zkAXw',
-						'url':'fish'
-					},
-					{
-						'title':'https://youtu.be/zU9f8NYy9uc',
-						'url':'pp1'
-					},
-					{
-						'title':'7 weeks & 3 days',
-						'url':'https://www.youtube.com/watch?v=XVxO6fKtrw4'
-					},
-					{
-						'title':'virtual love slowed',
-						'url':'https://www.youtube.com/watch?v=5E6gLBOJAfY'
-					}
-				]
-			}" 
-		></script>
-		SCM Music Player script end -->
-   
 		<script src="scripts/oneko.js"></script>
 		<script src="scripts/lastfm.js"></script>
 		<script src="scripts/snowww.js"></script>
@@ -124,10 +23,10 @@
 
 		<p>
 			<span id="byebye" onclick="unmuteambiance()">
-				muted...
+				unmuted ^^ (check browser!)
 			</span>
 		</p>
-		<audio id="rain" autoplay muted loop>
+		<audio id="rain" autoplay loop>
 			<source src="cold.opus">
 		</audio>
 		
@@ -137,7 +36,8 @@
 				Hiiii &lt;3 🌸🤍  . ݁₊ ⊹ . ݁˖ . ݁
 			</h1> 
 			<h2>
-				Thank you for visiting my website!
+				Thank you for visiting my website! <br> 
+				<span color: var(--overlay1);>this place needs a remake ughh</span>
 			</h2> 
 			<!--
 				hiii you wont really find anything here
@@ -145,9 +45,8 @@
 			<div class="coolstuffsss"> 
 				<p> 
 					<a href="blog/index.html">My Blog/Articles 🤍🤍</a> <br> 
-					<a href="weeklyvideo/index.html">Video of the week!</a><br> 
-					<a href="https://mood.zptr.cc/moonlitivy">Current mood</a> 
-					<a href="https://status.cafe/users/sillyivy">
+					<a href="weeklyvideo/index.html">Video of the week!</a><br>  
+					<a href="https://status.cafe/users/sillyivy">Current mood 
 						<img src="https://status.cafe/users/sillyivy/badge.png" alt="Status Cafe Profile"/>
 					</a><br>
 					<a href="https://sillyivyluna.atabook.org/">. ݁₊ ⊹ . ݁˖ . ݁ guest book!</a><br> 
@@ -202,33 +101,6 @@
 					status: <span id="timeago" style="color: var(--accent);">loading...</span>
 				</p>
 			</div> 
-			<!-- old lastfm api call function! 
-
-			powered by https://github.com/biancarosa/lastfm-last-played
-			@biancarosa (THANK YOU SO SO MUCH FOR MAKING THIS)
-
-			<script type="text/javascript">
-				let user = 'sillygirlivy';
-				let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
-				let song = document.querySelector('#song');
-				const dynamlink = document.getElementById('dynamlink');
-				const songcover = document.getElementById('songcover');
-
-				fetch(url)
-					.then(
-						function (response) {
-							return response.json()
-						}
-					).then(
-						function (json) {
-							songcover.src = json['track']['image']['1']['#text'];
-							dynamlink.href = json['track']['url'];
-							song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
-						}
-					);
-					
-			</script> 
-			-->
 			<h2>
 				about meeeeeeeee
 				<span style="font-size: 1.6rem; font-weight: 400;">
@@ -282,9 +154,9 @@
 
 			</script>
 			<div class="border">
-				<iframe src="https://lilithdev.neocities.org/shrine/vg/nso/apps/music?list=PLgPuDHHS4YTYPBEn-JEDMPzLIytmCZVLC" style="width: calc(100% - 16px * 2);height: 108px;display: block;margin:16px;">
+				<iframe src="https://lilithdev.neocities.org/shrine/vg/nso/apps/music?list=PLrEiDOnraDDvGMEp21qjcby79c5BXlSDe" style="width: calc(100% - 16px * 2);height: 108px;display: block;margin:16px;">
 				</iframe>
-				<p>ty <a href="https://lilithdev.neocities.org">lilithdev!</a></p>
+				<p>tyyyy <a href="https://lilithdev.neocities.org">lilithdev!</a></p>
 			</div>
 			
 			<div class="border"> 
