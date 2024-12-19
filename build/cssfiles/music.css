@@ -1,0 +1,100 @@
+@font-face{
+    font-family:Strawberry;
+    src:url("../fonts/Strawberry.woff");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap
+}
+#player,#player a{ 
+    color:#cdd6f4 ;  
+    font-size: 11px; 
+    font-family: Strawberry;
+}
+#player{ 
+    background:url(../white.png); 
+    background-position:bottom; 
+    background-color: #cdd6f4;
+}
+#player .mainImage{ 
+    background:url(../2.png); 
+}
+
+#player #baseLeft{ 
+    width:93px; 
+} 
+#player #baseRight{ 
+    width:145px;
+} 
+#player .button{  
+    width:26px; 
+}
+#player #play{
+     background:url(../play.png); 
+}
+#player #play,#player #pause{ 
+    left:26px; 
+}
+#player #previous{ 
+    left:0px; 
+}
+#player #next{ 
+    left:52px; 
+}
+#player #title{ 
+    left:90px;  
+    font-size: 9px; 
+}
+#player #tooltip{ 
+    right:196px; 
+}    
+#player #timer{ 
+    right:120px;  
+} 
+#player #list{ 
+    right:0px; 
+} 
+
+#player #seeker{ 
+    right:320px; 
+}
+#player #seekerBase{ 
+    border-color:#cdd6f4;  
+}
+#player #seekerBuffered{ 
+    background-color:#cdd6f4; 
+}
+#player #seekerSliderBase{ 
+    background-color:#cdd6f4; 
+}
+
+#player #volume{ 
+    width:65px; 
+    right:39px; 
+} 
+#player #volumeSlider{ 
+    width:8px; 
+    background:url(../idkk.png); 
+}
+
+#playlist,#playlist .module,#playlist h3{ 
+    border-color:#cdd6f4;
+}
+#playlist .module{  
+    color:#cdd6f4; 
+    background-color:#7f849c; 
+}
+#playlist h3{ 
+    background:url(../white.png); 
+    color:#cdd6f4; 
+    background-color:#7f849c;  
+}
+#playlist .even{
+    background-color:#7f849c;
+}
+#playlist .odd{ 
+    background-color:#7f849c;
+}
+#playlist .focus{ 
+    background-color:#7f849c; 
+    color:#cdd6f4;
+}   
