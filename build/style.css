@@ -284,3 +284,8 @@ p.playlist {
 h2.playlist {
     margin: 1rem 1em 0.5em 1em;
 }
+div.innerscroll {
+    overflow: scroll;
+    max-height: 20rem;
+
+}
