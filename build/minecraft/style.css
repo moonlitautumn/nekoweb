@@ -8,6 +8,7 @@
 html{
     background-image: url("dirt-texture.png");
     background-repeat: repeat;
+    font-family:Minecraft;
 }
 main{
     color: #FFF;
@@ -94,12 +95,13 @@ a:hover,a:active{
     color: #fff;
 }
 #byebye {
-    opacity: 0.8;
-    position: absolute;
-    top: 20px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 20px;
     left: 20px;
     cursor: pointer;
+    color: #fff;
 }
 #byebye:hover {
-    opacity: 1;
+    opacity: 7;
 }
