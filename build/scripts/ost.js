@@ -4,7 +4,7 @@ function osttoggle() {
     var bye = document.getElementById('byee'); 
     
     if (ostaudio.paused) {
-    	ostaudio.play().
+    	ostaudio.play();
         toggle.innerHTML = "playing!";
         bye.innerHTML = '';
 	} else {
