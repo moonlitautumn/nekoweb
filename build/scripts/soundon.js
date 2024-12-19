@@ -1,6 +1,6 @@
 
 function unmuteambiance() {
-    let audio = document.getElementById('plspls'); 
+    let audio = document.getElementById('rain'); 
     var hidee = document.getElementById('byebye'); 
 
 	if (audio.muted) {
