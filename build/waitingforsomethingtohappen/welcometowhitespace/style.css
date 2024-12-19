@@ -98,3 +98,13 @@ a:hover,a:active{
     text-decoration: none;
     color: #FF4B47;
 }
+#byebye {
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+#byebye:hover {
+    opacity: 1;
+}

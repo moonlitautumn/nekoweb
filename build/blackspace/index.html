@@ -19,6 +19,14 @@
                 it will be destroyed just to be created again on your next visit.
             -->
             <!--scream into the void-->
+
+
+            <script src="../scripts/soundon.js"></script>
+            <p>
+                <span id="byebye" onclick="unmuteambiance()">
+                    unmuted ^^ (check browser sounds!)
+                </span>
+            </p>
 		<main> 
             <h1>
                 there <span id="bye">is</span> <span id="change">nothing</span> here..<span id="change2">?</span>
@@ -50,7 +58,7 @@
                     }
                 }
             </script>
-            <audio loop autoplay>
+            <audio id="rain" loop autoplay>
                 <source src="Vf_stump.rpgmvo.ogg" type="audio/ogg">
             </audio>
             </div>
