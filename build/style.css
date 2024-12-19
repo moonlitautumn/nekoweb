@@ -277,3 +277,10 @@ footer{
 #byebye:hover {
     opacity: 1;
 }
+p.playlist {
+    margin: 0; 
+    margin-left: 1.5rem;
+}
+h2.playlist {
+    margin: 1rem 1em 0.5em 1em;
+}
