@@ -278,3 +278,23 @@ header {
 .iframe-style {
     border: none;
 }
+.sidebar-left {
+    height: 100%;
+    width: 15%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--mantle);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidebar-right {
+    height: 100%;
+    width: 15%;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--mantle);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
