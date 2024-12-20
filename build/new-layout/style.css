@@ -260,6 +260,21 @@ div.innerscroll {
     font-family: Strawberry;
 }
 header {
-    align-content: center;
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+.main-iframe {
+    padding:1rem;
+    font-size:20px;
+    line-height:1.6;
+    width:70%;
+    display:flex;
+    justify-content:center;
+    max-width:1920px;
+    margin:auto;
+    flex-direction:column;
+
+    border: none;
+    
 }
