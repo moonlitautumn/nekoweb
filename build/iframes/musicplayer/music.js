@@ -16,6 +16,7 @@ const nodes = {
 
 const params = new URLSearchParams(window.location.search);
 const list = params.get("list");
+let shufflepls = params.has("shuffle");
 
 const updateVisibility = () => {
     nodes.volumeArea.style.display = "flex";
@@ -231,7 +232,7 @@ function onPlayerStateChange(event) {
     }*/
    
     const playerasdf = event.target;
-    const shufflepls = params.has("shuffle");
+    
 
     if(shufflepls) {
         playerasdf.setShuffle(true);
