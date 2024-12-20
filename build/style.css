@@ -251,8 +251,7 @@ div.innerscroll {
 
 }
 .textthingy {
-    align-self: center;
-    width: 100%;
+    width: 30%;
     padding: 1rem;
     border: 5px solid var(--accent);
     background-color: var(--mantle);
