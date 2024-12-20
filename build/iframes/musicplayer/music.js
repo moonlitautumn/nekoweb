@@ -198,13 +198,13 @@ function onPlayerReady(event) {
     //titleText.innerHTML = player.getVideoData().title;
     /*updateVideoInfo(event.target.getVideoData());*/
   
-    event.target.setShuffle({'shufflePlaylist' : 1});
+    /*event.target.setShuffle({'shufflePlaylist' : 1});
     event.target.nextVideo();
     titleText.innerHTML = player.getVideoData().title;
     event.target.setShuffle({'shufflePlaylist' : 0});
     event.target.stopVideo();
     playRandomTrack();
-  
+    */
     nodes.playButton.addEventListener('click', function(){
         togglePlay();
     });
