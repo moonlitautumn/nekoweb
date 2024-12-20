@@ -84,7 +84,7 @@ body {
 #song-title > div {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: " â™ª";
+    text-overflow: "...";
 }
 
 #song-uploader {
@@ -92,7 +92,7 @@ body {
     font-family: var(--lilith-tiny-text);
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: " â™«";
+    text-overflow: "...";
     /*font-size: 24px;*/
 }
 

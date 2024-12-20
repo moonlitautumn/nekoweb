@@ -299,3 +299,8 @@ p.sidebar-right {
 div.sidebar-right {
     border:solid 5px var(--accent);
 }
+#song {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "...";
+}
