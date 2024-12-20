@@ -4,7 +4,7 @@
 html{
     font-family:system-ui,sans-serif;
     background:#112;
-    cursor:var(--ivy-cursor-normal);
+    cursor:url(assets/cursor/mouse.png), default;
 }
 code{
     font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace
@@ -18,7 +18,8 @@ body{
     background-color:var(--base);
     font-family:Strawberry,Inter,Avenir,Helvetica,Arial,sans-serif;
     text-align:left;
-    image-rendering:crisp-edges
+    image-rendering:crisp-edges;
+    cursor:url(assets/cursor/mouse.png), default;
 }
 main{
     padding:1rem;
@@ -55,7 +56,7 @@ p,ul{
     font-weight:400
 }
 .mewo{
-    cursor:var(--ivy-grab-normal);
+    cursor:url(assets/cursor/pet.png), grab;
 }
 li{
     margin-bottom:1rem
@@ -73,7 +74,7 @@ a{
     transition:text-decoration-color 1s ease,color 1s ease;
     text-decoration-color:transparent;
     text-decoration:underline;
-    cursor:var(--ivy-point-normal);
+    cursor:url(assets/cursor/pointy.png), pointer;
 }
 a:link,a:visited{
     text-decoration-color:transparent;
