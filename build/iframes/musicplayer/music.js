@@ -39,16 +39,16 @@ window.addEventListener("resize", (event) => {
 });
 
 const imgUrlPlay = {
-    play: "music_play.png",
-    pause: "music_pause.png",
-    loading: "music_load.gif"
+    play: "pngs/music_play.png",
+    pause: "pngs/music_pause.png",
+    loading: "pngs/music_load.gif"
 };
 
 const imgUrlVolume = {
-    normal: "music_volume_100.png",
-    low: "music_volume_50.png",
-    lowest: "music_volume_20.png",
-    mute: "music_volume_mute.png"
+    normal: "pngs/music_volume_100.png",
+    low: "pngs/music_volume_50.png",
+    lowest: "pngs/music_volume_20.png",
+    mute: "pngs/music_volume_mute.png"
 };
 
 function formatTime(seconds) {

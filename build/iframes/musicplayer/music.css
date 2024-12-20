@@ -1,43 +1,16 @@
 @font-face {
     /*true size is 8px*/
     font-family: "DinkieBitmap 7px";/*https://lilithdev.neocities.org/fonts*/
-    src: url(https://lilithdev.neocities.org/fonts/DinkieBitmap-7px.woff2) format("woff2");
-}
-  
-@font-face {
-    /*true size is 10px*/
-    font-family: "DinkieBitmap 9px";
-    src: url(https://lilithdev.neocities.org/fonts/DinkieBitmap-9px.woff2) format("woff2");
-}
-  
-@font-face {
-    font-family: "Zpix";
-    src: url(https://lilithdev.neocities.org/fonts/Zpix.woff2) format("woff2");
-    font-weight: 500;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: "pixelmplus12";
-    src: url(https://lilithdev.neocities.org/fonts/pixelmplus12-regular-webfont.woff2) format("woff2");
-    font-weight: 500;
-    font-style: normal;
+    src: url(fonts/DinkieBitmap-7px.woff2) format("woff2");
 }
   
 @font-face {
     font-family: 'PixelMplus10';
-    src: url(https://lilithdev.neocities.org/fonts/PixelMplus10-Regular.woff2) format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-@font-face {
-    font-family: 'Press Start 2P';
-    src: url(https://lilithdev.neocities.org/fonts/PressStart2P-Regular.woff2) format("woff2");
+    src: url(fonts/PixelMplus10-Regular.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
-  
+   
 :root {
     --lilith-inactive-color: #E2E2E2;
     --lilith-outer-color: #94F1E1;
@@ -56,19 +29,11 @@
     --lilith-window-border-resize-width: 8px;
     
     --lilith-tiny-text: "DinkieBitmap 7px";
-    --lilith-small-text: "DinkieBitmap 9px";
-    --lilith-normal-text: "Zpix";
-    --lilith-alt-text: "pixelmplus12";
     --lilith-alt2-text: "PixelMplus10";
-    --lilith-counter-text: "Press Start 2P";
   
-    --lilith-cursor-normal: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor.png"), auto;
-    --lilith-cursor-click: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_click.png") 7 0, auto;
-    --lilith-cursor-grab: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_grab.png") 5 0, auto;
-    --lilith-cursor-text: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_text.png") 7 0, auto;
-    --lilith-cursor-horizontal: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_horizontal.png"), auto;
-    --lilith-cursor-vertical: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_vertical.png"), auto;
-    --lilith-cursor-diagonal1: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_diagonal1.png"), auto;
+    --lilith-cursor-normal: url("cursor/cursor.png"), auto;
+    --lilith-cursor-click: url("cursor/cursor_click.png") 7 0, auto;
+    --lilith-cursor-text: url("cursor/cursor_text.png") 7 0, auto;
 }
   
 html {
