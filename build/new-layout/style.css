@@ -305,8 +305,3 @@ p.sidebar-left {
     width: 100%;
     text-align: center;
 }
-#song {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: "...";
-}
