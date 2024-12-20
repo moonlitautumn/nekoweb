@@ -133,7 +133,6 @@ p.smth{
     animation-delay:2.5s}@keyframes spinny{0%{transform:translate(0)}to{transform:translate(-100%)}
 }
 #statuscafe {
-    padding: .5em;
     background-color: var(--base);
     border: 5Px solid var(--accent);
     margin-bottom: 1rem;
@@ -141,8 +140,8 @@ p.smth{
 }
 #statuscafe-username {
     margin: 1rem 1em 0.5em 1em;
-    font-size:1.6rem;
-    font-weight:400;
+    font-size:1.2rem;
+    font-weight:300;
 
 }
 #statuscafe-content {
@@ -295,4 +294,8 @@ header {
 p.sidebar-right {
     font-size:1.2rem;
     font-weight:300;
+    width: 100%;
+}
+div.sidebar-right {
+    border:solid 5px var(--accent);
 }
