@@ -268,13 +268,13 @@ header {
     padding:1rem;
     font-size:20px;
     line-height:1.6;
-    width:70%;
+    width: 100%;
     display:flex;
     justify-content:center;
     max-width:1920px;
     margin:auto;
     flex-direction:column;
-
+}
+.iframe-style {
     border: none;
-    
 }

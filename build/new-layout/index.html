@@ -6,6 +6,13 @@
 		<link rel="icon" href="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/favicon.ico">
 		<title>waiting for something to happen...?</title>
 		<link rel="stylesheet" href="style.css">
+
+        <script>
+            function resizeIframe(obj) {
+              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+          </script>
+          
 	</head>   
 	<body>
 		<audio id="ping" src="../assets/audio/pc_messagebox.wav"></audio>
@@ -67,7 +74,7 @@
 
             </div>
 			<div class="main-iframe">
-                <iframe src="https://sillyivy.nekoweb.org/new-layout/main.html"></iframe>
+                <iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" class="iframe-style" src="https://sillyivy.nekoweb.org/new-layout/main.html"></iframe>
             </div>
             <div class="sidebar-right">
 
