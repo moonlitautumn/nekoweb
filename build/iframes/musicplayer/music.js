@@ -231,9 +231,14 @@ function onPlayerStateChange(event) {
     }*/
    
     const playerasdf = event.target;
+    const shufflepls = params.get("shuffle");
 
-    if(params.has("shuffle") ? params.get("shuffle") = 'true' : false) {
+    if(shufflepls == "1") {
         playerasdf.setShuffle(true);
+        console.log("shuffle true");
+    } else {
+        playerasdf.setShuffle(false);
+        console.log("shuffle false");
     }
     
     updateGraphics(event.data);
