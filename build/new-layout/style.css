@@ -281,22 +281,20 @@ header {
 .sidebar-left {
     height: 100%;
     width: 15%;
-    position: fixed;
-    z-index: 1;
+    position: sticky;
     top: 0;
     left: 0;
-    background-color: var(--mantle);
+    background-color: var(--base);
     overflow-x: hidden;
     padding-top: 20px;
 }
 .sidebar-right {
     height: 100%;
     width: 15%;
-    position: fixed;
-    z-index: 1;
+    position: sticky;
     top: 0;
     right: 0;
-    background-color: var(--mantle);
+    background-color: var(--base);
     overflow-x: hidden;
     padding-top: 20px;
 }
