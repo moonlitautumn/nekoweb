@@ -230,6 +230,8 @@ function onPlayerStateChange(event) {
         setTimeout(stopVideo, 6000);
         done = true;
     }*/
+    const playerasdf = event.target;
+    playerasdf.setShuffle(true);
     updateGraphics(event.data);
     if(event.data == YT.PlayerState.PLAYING) {
         setInterval(videoAutoUpdater, 500);
