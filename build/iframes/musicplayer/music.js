@@ -177,17 +177,18 @@ let shufflePlayPrevent = false;
 function onPlayerReady(event) {
     event.target.setVolume(50);
     event.target.setLoop(true);
+    var numPl = Math.floor((Math.random() * 50) + 1);
 
     nodes.volumeFill.style.width = "50%";
     nodes.volumeIcon.src = imgUrlVolume.low;
   
     if(params.has("shuffle") ? params.get("shuffle") : 0) {
         player.setShuffle(true);
-        player.playVideoAt(0);
+        player.playVideoAt(numPl);
         if((params.has("autoplay") ? params.get("autoplay") : 0) == 0) {
             shufflePlayPrevent = true;
-            //player.pauseVideo();
-            //setTimeout(() => player.pauseVideo(), 1);
+            player.pauseVideo();
+            setTimeout(() => player.pauseVideo(), 1);
         }
     } else {
         updateVideoInfo(event.target.getVideoData());
