@@ -265,36 +265,26 @@ header {
     text-align: center;
 }
 .main-iframe {
-    padding:1rem;
-    font-size:20px;
-    line-height:1.6;
     width: 100%;
     display:flex;
     justify-content:center;
     max-width:1920px;
     margin:auto;
     flex-direction:column;
+    order: 2;
 }
 .iframe-style {
     border: none;
 }
 .sidebar-left {
-    height: 100%;
-    width: 15%;
+    max-height: 20px;
     position: sticky;
-    top: 0;
-    left: 0;
-    background-color: var(--base);
-    overflow-x: hidden;
-    padding-top: 20px;
+    order: 1;
+    background-color: var(--crust);
 }
 .sidebar-right {
-    height: 100%;
-    width: 15%;
+    max-height: 20px;
     position: sticky;
-    top: 0;
-    right: 0;
-    background-color: var(--base);
-    overflow-x: hidden;
-    padding-top: 20px;
+    order: 3;
+    background-color: var(--crust);
 }
