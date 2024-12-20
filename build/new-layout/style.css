@@ -135,7 +135,6 @@ p.smth{
 #statuscafe {
     background-color: var(--base);
     border: 5Px solid var(--accent);
-    margin-bottom: 1rem;
     
 }
 #statuscafe-username {
@@ -299,6 +298,12 @@ p.sidebar-right {
 }
 div.sidebar-right {
     border:solid 5px var(--accent);
+}
+p.sidebar-left {
+    font-size:1.2rem;
+    font-weight:300;
+    width: 100%;
+    text-align: center;
 }
 #song {
     white-space: nowrap;
