@@ -1,5 +1,5 @@
-@import url("..assets/all-fonts.css");
-@import url("..assets/common.css");
+@import url("all-fonts.css");
+@import url("common.css");
 
 html{
     font-family:system-ui,sans-serif;

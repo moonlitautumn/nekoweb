@@ -1,0 +1,28 @@
+@font-face{
+    font-family:Omori2;
+    src:url("../assets/fonts/OMORI_GAME2.ttf");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap
+}
+@font-face{
+    font-family:Omori;
+    src:url("../assets/fonts/OMORI_GAME.ttf");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap
+}
+@font-face{
+    font-family:Strawberry;
+    src:url("../assets/fonts/Strawberry.woff");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap
+}
+@font-face{
+    font-family:Minecraft;
+    src:url("../assets/fonts/MinecraftRegular-Bmg3.otf");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap
+}
