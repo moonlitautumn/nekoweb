@@ -1,6 +1,6 @@
 @font-face{
     font-family:Strawberry;
-    src:url("fonts/Strawberry.woff");
+    src:url("assets/fonts/Strawberry.woff");
     font-weight:400;
     font-style:normal;
     font-display:swap
@@ -43,7 +43,7 @@
 html{
     font-family:system-ui,sans-serif;
     background:#112;
-    cursor:url("mouse.png"),default;
+    cursor:url("assets/cursor/mouse.png"),default;
 }
 code{
     font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace
@@ -94,7 +94,7 @@ p,ul{
     font-weight:400
 }
 .mewo{
-    cursor:url("pet.png"), grab;
+    cursor:url("assets/cursor/pet.png"), grab;
 }
 li{
     margin-bottom:1rem
@@ -112,7 +112,7 @@ a{
     transition:text-decoration-color 1s ease,color 1s ease;
     text-decoration-color:transparent;
     text-decoration:underline;
-    cursor:url("pointy.png"),pointer;
+    cursor:url("assets/cursor/pointy.png"),pointer;
 }
 a:link,a:visited{
     text-decoration-color:transparent;

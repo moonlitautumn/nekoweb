@@ -1,0 +1,19 @@
+html{
+    background: #000000
+}
+.mari{
+    position: absolute;
+    right: 30%;
+    top: 35%;
+    image-rendering:crisp-edges
+}
+.asdf{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    image-rendering:crisp-edges;
+    opacity: 0.05;
+}
+.asdf:hover{
+    opacity: 0.25;
+}

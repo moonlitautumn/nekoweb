@@ -1,0 +1,40 @@
+@font-face{
+    font-family:Omori2;
+    src:url("../assets/fonts/OMORI_GAME2.ttf");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap
+}
+html{
+    background: #000000;
+    font-family:Omori2;
+    color: white;
+    font-size:1.6rem;
+    font-weight:400
+}
+.mari{
+    position: absolute;
+    right: 40%;
+    top: 35%;
+    image-rendering:crisp-edges
+}
+.asdf{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    image-rendering:crisp-edges;
+    opacity: 0.05;
+}
+.asdf:hover{
+    opacity: 0.25;
+}
+#byebye {
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+#byebye:hover {
+    opacity: 1;
+}
