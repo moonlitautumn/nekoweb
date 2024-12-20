@@ -231,9 +231,9 @@ function onPlayerStateChange(event) {
     }*/
    
     const playerasdf = event.target;
-    const shufflepls = params.get("shuffle");
+    const shufflepls = params.has("shuffle");
 
-    if(shufflepls == "1") {
+    if(shufflepls) {
         playerasdf.setShuffle(true);
         console.log("shuffle true");
     } else {
