@@ -25,7 +25,7 @@ main{
     padding:1rem;
     font-size:20px;
     line-height:1.6;
-    width:100%;
+    width:95%;
     display:flex;
     justify-content:center;
     max-width:1920px;
@@ -277,18 +277,24 @@ header {
     border: none;
 }
 .sidebar-left {
-    max-height: 20px;
+    height: 100%;
     position: sticky;
     order: 1;
     top: 0;
     bottom: 0;
     width: 15%;
+
+    font-size:0.5rem;
+    font-weight:100
 }
 .sidebar-right {
-    max-height: 20px;
+    height: 100%;
     position: sticky;
     top: 0;
     bottom: 0;
     order: 3;
     width: 15%;
+
+    font-size:0.5rem;
+    font-weight:100
 }
