@@ -232,7 +232,7 @@ function onPlayerStateChange(event) {
    
     const playerasdf = event.target;
 
-    if(params.has("shuffle") ? params.get("shuffle") : 0) {
+    if(params.has("shuffle") ? params.get("shuffle") = 'true' : false) {
         playerasdf.setShuffle(true);
     }
     
