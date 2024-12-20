@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--credits for the code go to https://lilithdev.neocities.org!! 
+i just edited some of the values to fit my website
+
+im hosting it here because i didnt want to hotlink it from ur website-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>music player!</title>
+        <link rel="stylesheet" href="music.css">
+    </head>
+    <body>
+        <a id="music-left" target=”_blank” style="height: 85px;">
+            <img id="music-logo" style="object-fit: cover; width: 85px; height: 85px;" src="https://img.youtube.com/vi/-wtiB7oXKsw/maxresdefault.jpg">
+        </a>
+        <div id="music-right" style="flex-grow: 1; min-width: 0;">
+            <div id="song-title">
+            <div id="song-name">&nbsp;</div>
+            <img id="select-playlist" src="playlist.png" onclick="document.getElementById('custom-playlist').style.display = 'inherit';">
+            </div>
+            <div id="song-uploader">
+                &nbsp;
+            </div>
+            <div id="playback-bar">
+                <div id="playback-fill"></div>
+                <div class="knob"></div>
+            </div>
+            <div id="details">
+                <div id="controls">
+                    <img src="music_prev.png" id="music-prev">
+                    <img src="music_play.png" id="music-toggle">
+                    <img src="music_next.png" id="music-next">
+                </div>
+                <div id="volume-area" style="flex-grow: 1; display:flex;align-items: center;gap: 4px;">
+                    <img id="volume-icon" src="music_volume_100.png">
+                    <div id="volume-bar" style="flex-grow:1;">
+                        <div id="volume-fill"></div>
+                        <div class="knob"></div>
+                    </div>
+                </div>
+                <div id="playtime">
+                    00:00 / 00:00
+                </div>
+            </div>
+        </div>
+        <div id="custom-playlist" style="display:none;">
+            <input id="custom-input" type="text" class="search-box" placeholder="Put playlist link here!">
+            <button id="custom-create" type="submit" class="search-button" onclick="createPlaylist()">Create</button>
+            <div style="position: absolute; right:4px; top:4px;color: var(--lilith-window-text-color);font-family: var(--lilith-tiny-text);" onclick="document.getElementById('custom-playlist').style.display = 'none';">X</div>
+        </div>
+        <div id="player"></div>
+        <script src="music.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+    </body>
+</html>

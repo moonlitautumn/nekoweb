@@ -1,0 +1,229 @@
+@font-face {
+    /*true size is 8px*/
+    font-family: "DinkieBitmap 7px";/*https://lilithdev.neocities.org/fonts*/
+    src: url(https://lilithdev.neocities.org/fonts/DinkieBitmap-7px.woff2) format("woff2");
+}
+  
+@font-face {
+    /*true size is 10px*/
+    font-family: "DinkieBitmap 9px";
+    src: url(https://lilithdev.neocities.org/fonts/DinkieBitmap-9px.woff2) format("woff2");
+}
+  
+@font-face {
+    font-family: "Zpix";
+    src: url(https://lilithdev.neocities.org/fonts/Zpix.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "pixelmplus12";
+    src: url(https://lilithdev.neocities.org/fonts/pixelmplus12-regular-webfont.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'PixelMplus10';
+    src: url(https://lilithdev.neocities.org/fonts/PixelMplus10-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url(https://lilithdev.neocities.org/fonts/PressStart2P-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+:root {
+    --lilith-inactive-color: #E2E2E2;
+    --lilith-outer-color: #94F1E1;
+    --lilith-inner-color: #EDD0EE;
+    --lilith-border-color: #4932C9;
+    --lilith-window-text-color: #4932C9;
+    --lilith-window-text-back: #F9EFF9;
+    --lilith-username-color: #5072D6;
+    --lilith-button-color: #F8E1FB;
+    --lilith-task-color: #F6E0F8;
+    --lilith-scrollbar-inner-color: #DB8ED6;
+    --lilith-scrollbar-inner-hover-color: #B471B0;
+    --lilith-scrollbar-outer-color: #C5EAFC;
+    
+    --lilith-window-border-size: 2px;
+    --lilith-window-border-resize-width: 8px;
+    
+    --lilith-tiny-text: "DinkieBitmap 7px";
+    --lilith-small-text: "DinkieBitmap 9px";
+    --lilith-normal-text: "Zpix";
+    --lilith-alt-text: "pixelmplus12";
+    --lilith-alt2-text: "PixelMplus10";
+    --lilith-counter-text: "Press Start 2P";
+  
+    --lilith-cursor-normal: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor.png"), auto;
+    --lilith-cursor-click: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_click.png") 7 0, auto;
+    --lilith-cursor-grab: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_grab.png") 5 0, auto;
+    --lilith-cursor-text: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_text.png") 7 0, auto;
+    --lilith-cursor-horizontal: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_horizontal.png"), auto;
+    --lilith-cursor-vertical: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_vertical.png"), auto;
+    --lilith-cursor-diagonal1: url("https://lilithdev.neocities.org/shrine/vg/nso/sprites/cursor/cursor_diagonal1.png"), auto;
+}
+  
+html {
+    cursor: var(--lilith-cursor-normal);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #F9EFF9;
+    image-rendering: pixelated;
+}
+
+body {
+    margin:0;
+    overflow:clip;
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    padding:10px;
+    height:calc(100% - 10px * 2);
+    /*display: none;*/
+}
+
+#player {
+    display:none;
+}
+
+#music-right {
+    display:flex;
+    flex-direction:column;
+    gap: 2px;
+    user-select: none; /* prevent grabbing everything */
+}
+
+#song-title {
+    color: var(--lilith-window-text-color);
+    /*font-family: var(--lilith-normal-text);*/
+    font-family: var(--lilith-alt2-text);
+    /*letter-spacing: -1px;*/
+    font-size: 20px;
+    min-width: 0;
+    display: flex;
+    justify-content: space-between;
+}
+  
+#song-title > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: " â™ª";
+}
+
+#song-uploader {
+    color: var(--lilith-window-text-color);
+    font-family: var(--lilith-tiny-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: " â™«";
+    /*font-size: 24px;*/
+}
+
+#playback-bar {
+    display: flex;
+    margin: 4px 0;
+    width: 100%; /* Full-width */
+    height: 4px; /* Specified height */
+    background: #F0D1F1;
+}
+
+#playback-fill {
+    /*width: 50%; /* Full-width */
+    height: 4px; /* Specified height */
+    background: #4D23CF;
+}
+
+#details {
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#volume-bar {
+    display: flex;
+    margin: 4px 0;
+    width: 100%; /* Full-width */
+    height: 4px; /* Specified height */
+    background: #F0D1F1;
+}
+
+#volume-fill {
+    /*width: 50%; /* Full-width */
+    height: 4px; /* Specified height */
+    background: #4D23CF;
+}
+
+.knob {
+    width: 8px;
+    height: 8px;
+    background: #4D23CF;
+    position: relative;
+    top: -2px;
+}
+
+#playtime {
+    color: var(--lilith-window-text-color);
+    font-family: var(--lilith-tiny-text);
+    white-space: nowrap;
+}
+
+#custom-playlist {
+    padding: 8px;
+    position: absolute;
+    min-width: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--lilith-window-text-back);
+    left:0;
+    top:0;
+    display:flex;
+    gap: 8px;
+    align-items: center;
+    box-sizing:border-box;
+}
+
+#custom-input {
+    padding: 10px;
+    background: var(--lilith-task-color);
+    border: 2px solid;
+    border-color: var(--lilith-border-color) whitesmoke whitesmoke var(--lilith-border-color);
+    outline:0;
+    color: var(--lilith-window-text-color);
+    font-family: var(--lilith-alt2-text);
+    font-size: 20px;
+    flex-grow: 1;
+    cursor: var(--lilith-cursor-text);
+}
+
+#custom-create {
+    padding: 10px 20px;
+    background: var(--lilith-task-color);
+    border-color: whitesmoke var(--lilith-border-color) var(--lilith-border-color) whitesmoke;
+    color: var(--lilith-window-text-color);
+    font-family: var(--lilith-alt2-text);
+    font-size: 20px;
+    cursor: pointer;
+    height: 46px;
+}
+
+#music-prev, #music-toggle, #music-next, #music-logo, #select-playlist, #playback-bar, #volume-bar, #volume-icon {
+    cursor: var(--lilith-cursor-click);
+}
