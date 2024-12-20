@@ -283,9 +283,6 @@ header {
     top: 0;
     bottom: 0;
     width: 15%;
-
-    font-size:0.5rem;
-    font-weight:100
 }
 .sidebar-right {
     height: 100%;
@@ -294,7 +291,8 @@ header {
     bottom: 0;
     order: 3;
     width: 15%;
-
-    font-size:0.5rem;
-    font-weight:100
+}
+p.sidebar-right {
+    font-size:1.2rem;
+    font-weight:300;
 }

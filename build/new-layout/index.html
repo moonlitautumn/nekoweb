@@ -67,14 +67,6 @@
         </header>
         
         <main>
-            <div class="border" onclick="osttoggle()" style="cursor:url('pointy.png'), pointer;">
-                <p style="text-align: center;">
-                    ost status: [ <span id="toggle">paused :(</span> <span id="byee" style="color: var(--overlay1);">click here to toggle!</span> ]
-                </p>
-            </div>
-            <audio id="ost" loop > 
-                <source src="../assets/audio/celeste.mp3">
-            </audio>
             <div style="display: flex;">
                 <!--
                     sidebar left start
@@ -101,6 +93,16 @@
                 -->
 		    
                 <div class="main-iframe">
+                    
+                    <div class="border" onclick="osttoggle()" style="cursor:url('pointy.png'), pointer;">
+                        <p style="text-align: center;">
+                            ost status: [ <span id="toggle">paused :(</span> <span id="byee" style="color: var(--overlay1);">click here to toggle!</span> ]
+                        </p>
+                    </div>
+                    <audio id="ost" loop > 
+                        <source src="../assets/audio/celeste.mp3">
+                    </audio>
+
                     <iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" class="iframe-style" src="https://sillyivy.nekoweb.org/new-layout/main.html"></iframe>
                 </div>
 
