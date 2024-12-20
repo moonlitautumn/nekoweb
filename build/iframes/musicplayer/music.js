@@ -181,6 +181,7 @@ function onPlayerReady(event) {
 
     nodes.volumeFill.style.width = "50%";
     nodes.volumeIcon.src = imgUrlVolume.low;
+    updateVideoInfo(event.target.getVideoData());
   
     //if(params.has("shuffle") ? params.get("shuffle") : 0) {
     //    player.setShuffle(true);
