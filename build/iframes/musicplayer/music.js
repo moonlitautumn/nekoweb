@@ -232,7 +232,7 @@ function onPlayerStateChange(event) {
     }*/
    
     const playerasdf = event.target;
-    
+    console.log(shufflepls);
 
     if(shufflepls) {
         playerasdf.setShuffle(true);
