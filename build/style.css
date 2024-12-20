@@ -250,3 +250,12 @@ div.innerscroll {
     max-height: 20rem;
 
 }
+.textthingy {
+    align-self: center;
+    width: 100%;
+    padding: 1rem;
+    border: 5px solid var(--accent);
+    background-color: var(--mantle);
+    color: var(--subtext1);
+    font-family: Strawberry;
+}
