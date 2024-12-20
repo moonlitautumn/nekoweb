@@ -70,7 +70,26 @@
         <main>
             <div style="display: flex;">
                 <aside class="sidebar-left">
-                
+                    <div> 
+                        <p class="spinny"> 
+                            <span>
+                                webbedsite ost thingy oh ma gah (featuring the celeste ost!)
+                            </span> 
+                        </p> 
+                        <p class="spinny spinny2"> 
+                            <span>
+                                webbedsite ost thingy oh ma gah (featuring the celeste ost!)
+                            </span> 
+                        </p> 
+                    </div> 
+                    <div class="border" onclick="osttoggle()" style="cursor:url('pointy.png'), pointer;">
+                        <p style="text-align: center;">
+                            ost status: [ <span id="toggle">paused :(</span> <span id="byee" style="color: var(--overlay1);">click here to toggle!</span> ]
+                        </p>
+                    </div>
+                    <audio id="ost" loop > 
+                        <source src="../assets/audio/celeste.mp3">
+                    </audio>
                 </aside>
 		    
                 <div class="main-iframe">
