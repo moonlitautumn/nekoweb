@@ -7,11 +7,7 @@
 		<title>waiting for something to happen...?</title>
 		<link rel="stylesheet" href="style.css">
 
-        <script>
-            function resizeIframe(obj) {
-              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-            }
-          </script>
+        
           
 	</head>   
 	<body>
@@ -116,7 +112,7 @@
                 -->
 		    
                 <div class="main-iframe">
-                    <iframe name="mainpage" frameborder="0" scrolling="no" onload="resizeIframe(this)" class="iframe-style" src="main.html"></iframe>
+                    <iframe id="mainpage" name="mainpage" frameborder="0" scrolling="no" onload="resizeIframe()" class="iframe-style" src="main.html"></iframe>
                 </div>
 
                 <!--
@@ -129,16 +125,22 @@
                     <iframe scrolling="no" id="imgimg" style="border:none;" src="https://dimden.neocities.org/navlink/" width="180" height="180"></iframe>
                     <div class="coolstuffsss borderside"> 
                         <p class="sidebar-right"> 
-							<a href="https://sillyivy.nekoweb.org/new-layout/main.html" target="mainpage">main page</a><br>
-                            <a href="blog/index.html" target="mainpage">My Blog 🤍🤍</a> <br> 
-                            <a href="weeklyvideo/index.html" target="mainpage">Video of the week!</a><br>  
+							<a href="https://sillyivy.nekoweb.org/new-layout/main.html" target="mainpage" onclick="resizeIframe()">main page</a><br>
+                            <a href="blog/index.html" target="mainpage" onclick="resizeIframe()">My Blog 🤍🤍</a> <br> 
+                            <a href="weeklyvideo/index.html" target="mainpage" onclick="resizeIframe()">Video of the week!</a><br>  
                             <a href="https://status.cafe/users/sillyivy">mood 
                                 <img src="https://status.cafe/users/sillyivy/badge.png" alt="Status Cafe Profile"/>
                             </a><br>
-                            <a href="https://sillyivyluna.atabook.org/" target="mainpage">. ݁₊ ⊹ guest book!</a><br> 
+                            <a href="https://sillyivyluna.atabook.org/" target="mainpage" onclick="resizeIframe()">. ݁₊ ⊹ guest book!</a><br> 
                             <a href="https://www.youtube.com/watch?v=07OTCXiKEsw">Fav song!</a><br> 
                         </p> 
                     </div>
+					<script>
+						function resizeIframe() {
+							let mainpage = document.getElementById("mainpage");
+							  mainpage.style.height = mainpage.contentWindow.document.documentElement.scrollHeight + 'px';
+						}
+					</script>
                     <div class="borderside" style="margin-top: 0.6rem;">
                         <p class="sidebar-right">
                           		<script src="scripts/time.js" defer></script>  its <span id="time" style="color: var(--accent);">loading...</span>
