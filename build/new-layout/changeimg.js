@@ -14,6 +14,7 @@ function move() {
       if (width >= 100) {
         clearInterval(id);
         j = 0;
+        move();
       } else {
         width++;
         elem.style.width = width + "%";
@@ -27,7 +28,6 @@ function ChangeSrc()
   document.getElementById('imgimg').src = frames[i++];
   console.log("change");
   document.getElementById('progress').style.width = '0%';
-  move();  
   setTimeout('ChangeSrc()', (frames[i++]*1000));
 
 }
