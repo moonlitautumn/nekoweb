@@ -290,7 +290,7 @@ header {
     order: 3;
     width: 180px;
 }
-p.sidebar-right {
+.sidebar-right p{
     font-size:1.2rem;
     font-weight:300;
     width: 100%;
@@ -299,7 +299,7 @@ p.sidebar-right {
 div.sidebar-right {
     border:solid 5px var(--accent);
 }
-p.sidebar-left {
+.sidebar-left p{
     font-size:1.2rem;
     font-weight:300;
     width: 100%;
