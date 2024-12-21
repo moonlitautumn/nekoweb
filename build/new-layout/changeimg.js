@@ -9,7 +9,7 @@ function move() {
     j = 1;
     var elem = document.getElementById("progress");
     var width = 1;
-    var id = setInterval(frame, 333);
+    var id = setInterval(frame, 300);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
