@@ -1,6 +1,6 @@
 var frames = Array(
-    'https://sillyivy.nekoweb.org/new-layout/randompic.html', 10,
-    'https://dimden.neocities.org/navlink/', 10);
+    'https://sillyivy.nekoweb.org/new-layout/randompic.html', 30,
+    'https://dimden.neocities.org/navlink/', 30);
 var i = 0, len = frames.length;
 function ChangeSrc()
 {

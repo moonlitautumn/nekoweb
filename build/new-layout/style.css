@@ -135,7 +135,7 @@ p.smth{
 #statuscafe {
     background-color: var(--base);
     border: 5Px solid var(--accent);
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     
 }
 #statuscafe-username {
