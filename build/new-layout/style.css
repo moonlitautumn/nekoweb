@@ -338,3 +338,9 @@ p.sidebar-left{
 .fadeanim:hover {
     opacity: 1;
 }
+#songcover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
