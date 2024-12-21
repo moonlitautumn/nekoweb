@@ -144,8 +144,8 @@ p.smth{
     animation-delay:2.5s}@keyframes spinny{0%{transform:translate(0)}to{transform:translate(-100%)}
 }
 #statuscafe {
-    background-color: var(--base);
-    border: 5Px solid var(--accent);
+    background-color: #11112b;
+    border: 5Px solid #6c7086;
     margin-top: 1rem;
     margin-top: 1rem;
     height: 200px;
@@ -155,6 +155,7 @@ p.smth{
 }
 #statuscafe:hover {
     opacity: 1;
+    border-color: #89b4fa;
 }
 #statuscafe-username {
     margin: 1rem 1em 0.5em 1em;
