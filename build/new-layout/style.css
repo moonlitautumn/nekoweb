@@ -330,7 +330,32 @@ p.sidebar-left{
 }
 .fadeanim {
     opacity: 0.7;
+    cursor:url(..assets/cursor/pointy.png), pointer;
 }
 .fadeanim:hover {
     opacity: 1;
+}
+.follow {
+    background-color: #1e1e2e;
+    border: 1px solid #6c7086;
+    border-radius: 2px;
+    color: #f5c2e7;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-family: Strawberry;
+    font-size: 13px;
+    margin: 0 auto;
+    display: block;
+}
+.following {
+    background-color: #1e1e2e;
+    border: 1px solid #89b4fa;
+    border-radius: 2px;
+    color: #f5c2e7;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-family: Strawberry;
+    font-size: 13px;
+    margin: 0 auto;
+    display: block;
 }
