@@ -1,6 +1,6 @@
 var frames = Array(
     'https://sillyivy.nekoweb.org/new-layout/randompic.html', 30,
-    'https://dimden.neocities.org/navlink/', 30);
+    'https://dimden.neocities.org/navlink/');
 var i = 0, len = frames.length;
 
 var j = 0;
