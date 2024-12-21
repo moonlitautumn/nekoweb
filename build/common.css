@@ -26,6 +26,10 @@
     --mantle: #080815;
     --crust: #11111b;
 
+    --border-side: #6c7086;
+    --border-side-active: #89b4fa;
+    --background-side: #11112b;
+
     /*cursors start here*/
 
     --ivy-cursor-normal: url("cursor/mouse.png"), auto;
