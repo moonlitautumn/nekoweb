@@ -14,7 +14,7 @@ function move() {
       if (width >= 100) {
         clearInterval(id);
         j = 0;
-        move();
+        ChangeSrc()
       } else {
         width++;
         elem.style.width = width + "%";
@@ -27,8 +27,7 @@ function ChangeSrc()
   if (i >= len) { i = 0; } // start over
   document.getElementById('imgimg').src = frames[i++];
   console.log("change");
-  document.getElementById('progress').style.width = '0%';
-  setTimeout('ChangeSrc()', (frames[i++]*1000));
-
+  // setTimeout('ChangeSrc()', (frames[i++]*1000));
+  move();
 }
 window.onload = ChangeSrc;
