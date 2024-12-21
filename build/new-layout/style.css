@@ -63,7 +63,11 @@ li{
 }
 .border{
     border:solid 5px var(--accent);
-    padding:1rem
+    padding:1rem;
+    opacity: 0.7;
+}
+.border:hover {
+    opacity: 1;
 }
 header{
     margin:0;
@@ -139,7 +143,11 @@ p.smth{
     margin-top: 1rem;
     height: 200px;
     overflow: scroll;
+    opacity: 0.7;
     
+}
+#statuscafe:hover {
+    opacity: 1;
 }
 #statuscafe-username {
     margin: 1rem 1em 0.5em 1em;
