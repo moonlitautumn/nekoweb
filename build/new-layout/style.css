@@ -308,3 +308,27 @@ p.sidebar-left{
     width: 100%;
     text-align: center;
 }
+.wavy {
+    position: relative;
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(20px);
+    }
+}
