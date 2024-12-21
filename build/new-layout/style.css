@@ -136,6 +136,9 @@ p.smth{
     background-color: var(--base);
     border: 5Px solid var(--accent);
     margin-top: 1rem;
+    margin-top: 1rem;
+    height: 200px;
+    overflow: scroll;
     
 }
 #statuscafe-username {
