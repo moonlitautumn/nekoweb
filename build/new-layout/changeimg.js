@@ -19,9 +19,6 @@ function move() {
         elem.style.width = width + "%";
       }
     }
-  } else {
-    clearInterval(id);
-    j = 0;
   }
 }
 function ChangeSrc()
