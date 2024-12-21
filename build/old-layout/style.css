@@ -1,5 +1,5 @@
-@import url("assets/all-fonts.css");
-@import url("assets/common.css");
+@import url("../assets/all-fonts.css");
+@import url("../assets/common.css");
 
 html{
     font-family:system-ui,sans-serif;
@@ -19,7 +19,7 @@ body{
     font-family:Strawberry,Inter,Avenir,Helvetica,Arial,sans-serif;
     text-align:left;
     image-rendering:crisp-edges;
-    cursor:url(assets/cursor/mouse.png), default;
+    cursor:url(../assets/cursor/mouse.png), default;
 }
 main{
     padding:1rem;
@@ -56,7 +56,7 @@ p,ul{
     font-weight:400
 }
 .mewo{
-    cursor:url(assets/cursor/pet.png), grab;
+    cursor:url(../assets/cursor/pet.png), grab;
 }
 li{
     margin-bottom:1rem
@@ -74,7 +74,7 @@ a{
     transition:text-decoration-color 1s ease,color 1s ease;
     text-decoration-color:transparent;
     text-decoration:underline;
-    cursor:url(assets/cursor/pointy.png), pointer;
+    cursor:url(../assets/cursor/pointy.png), pointer;
 }
 a:link,a:visited{
     text-decoration-color:transparent;
