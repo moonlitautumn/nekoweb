@@ -280,9 +280,7 @@ header {
     position: sticky;
     order: 1;
     top: 0;
-    bottom: 0;
-    width: 15%;
-    min-width: 180px;
+    width: 180px;
 }
 .sidebar-right {
     height: 100%;
@@ -290,8 +288,7 @@ header {
     top: 0;
     bottom: 0;
     order: 3;
-    width: 15%;
-    min-width: 180px;
+    width: 180px;
 }
 p.sidebar-right {
     font-size:1.2rem;
