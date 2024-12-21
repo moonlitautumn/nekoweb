@@ -3,5 +3,5 @@ function copytext() {
     navigator.clipboard.writeText(copyText);
     let soundeffect = document.getElementById('ping');
     soundeffect.play();
-    alert("done!")
+    alert("copied to clipboard! (tysm!!)")
 } 
