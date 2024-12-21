@@ -68,7 +68,7 @@ li{
 
 .borderside{
     border:solid 5px #6c7086;
-    padding:1rem;
+    padding:0.5rem;
     background-color: #11112b;
     opacity: 0.7;
 }
@@ -148,7 +148,7 @@ p.smth{
     border: 5Px solid #6c7086;
     margin-top: 1rem;
     margin-top: 1rem;
-    height: 200px;
+    height: 250px;
     overflow: scroll;
     opacity: 0.7;
     
@@ -164,7 +164,7 @@ p.smth{
 
 }
 #statuscafe-content {
-    margin: 0 1em 0.5em 2em;
+    margin: 0 0.5em 0.5em 0.5em;
     font-size:1.2rem;
     font-weight:300;
     color: var(--overlay1)
