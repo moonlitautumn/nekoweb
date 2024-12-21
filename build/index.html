@@ -137,8 +137,8 @@
                     </div>
 					<script>
 						function resizeIframe() {
-							const mainpage = document.getElementById("mainpage");
-							mainpage.style.height = mainpage.contentWindow.document.documentElement.scrollHeight + 'px';
+							var mainpage = document.getElementById("mainpage");
+							mainpage.style.height = mainpage.contentWindow.document.body.scrollHeight + 'px';
 						}
 					</script>
                     <div class="borderside" style="margin-top: 0.6rem;">
