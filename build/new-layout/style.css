@@ -328,3 +328,9 @@ p.sidebar-left{
 .progress {
     height: 1rem; width: 1%; background-color: var(--text);
 }
+.fadeanim {
+    opacity: 0.7;
+}
+.fadeanim:hover {
+    opacity: 1;
+}
