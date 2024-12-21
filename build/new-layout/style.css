@@ -67,11 +67,13 @@ li{
 }
 
 .borderside{
-    border:solid 5px var(--accent);
+    border:solid 5px #6c7086;
     padding:1rem;
+    background-color: #11112b;
     opacity: 0.7;
 }
 .borderside:hover {
+    border: solid 5px #89b4fa;
     opacity: 1;
 }
 header{
