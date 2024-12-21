@@ -64,10 +64,6 @@ li{
 .border{
     border:solid 5px var(--accent);
     padding:1rem;
-    opacity: 0.7;
-}
-.border:hover {
-    opacity: 1;
 }
 
 .borderside{
