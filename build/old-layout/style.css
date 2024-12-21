@@ -1,10 +1,10 @@
-@import url("all-fonts.css");
-@import url("common.css");
+@import url("assets/all-fonts.css");
+@import url("assets/common.css");
 
 html{
     font-family:system-ui,sans-serif;
     background:#112;
-    cursor:url(..assets/cursor/mouse.png), default;
+    cursor:url(assets/cursor/mouse.png), default;
 }
 code{
     font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace
@@ -19,13 +19,13 @@ body{
     font-family:Strawberry,Inter,Avenir,Helvetica,Arial,sans-serif;
     text-align:left;
     image-rendering:crisp-edges;
-    cursor:url(..assets/cursor/mouse.png), default;
+    cursor:url(assets/cursor/mouse.png), default;
 }
 main{
     padding:1rem;
     font-size:20px;
     line-height:1.6;
-    width:90%;
+    width:70%;
     display:flex;
     justify-content:center;
     max-width:1920px;
@@ -56,25 +56,14 @@ p,ul{
     font-weight:400
 }
 .mewo{
-    cursor:url(..assets/cursor/pet.png), grab;
+    cursor:url(assets/cursor/pet.png), grab;
 }
 li{
     margin-bottom:1rem
 }
 .border{
     border:solid 5px var(--accent);
-    padding:1rem;
-}
-
-.borderside{
-    border:solid 5px #6c7086;
-    padding:0.5rem;
-    background-color: #11112b;
-    opacity: 0.7;
-}
-.borderside:hover {
-    border: solid 5px #89b4fa;
-    opacity: 1;
+    padding:1rem
 }
 header{
     margin:0;
@@ -85,7 +74,7 @@ a{
     transition:text-decoration-color 1s ease,color 1s ease;
     text-decoration-color:transparent;
     text-decoration:underline;
-    cursor:url(..assets/cursor/pointy.png), pointer;
+    cursor:url(assets/cursor/pointy.png), pointer;
 }
 a:link,a:visited{
     text-decoration-color:transparent;
@@ -144,29 +133,22 @@ p.smth{
     animation-delay:2.5s}@keyframes spinny{0%{transform:translate(0)}to{transform:translate(-100%)}
 }
 #statuscafe {
-    background-color: #11112b;
-    border: 5Px solid #6c7086;
-    margin-top: 1rem;
-    margin-top: 1rem;
-    height: 250px;
-    overflow: scroll;
-    opacity: 0.7;
+    padding: .5em;
+    background-color: var(--base);
+    border: 5Px solid var(--accent);
+    margin-bottom: 1rem;
     
-}
-#statuscafe:hover {
-    opacity: 1;
-    border-color: #89b4fa;
 }
 #statuscafe-username {
     margin: 1rem 1em 0.5em 1em;
-    font-size:1.2rem;
-    font-weight:300;
+    font-size:2.4rem;
+    font-weight:600
 
 }
 #statuscafe-content {
-    margin: 0 0.5em 0.5em 0.5em;
-    font-size:1.2rem;
-    font-weight:300;
+    margin: 0 1em 0.5em 2em;
+    font-size:1.6rem;
+    font-weight:400;
     color: var(--overlay1)
 }
 footer{
@@ -276,71 +258,4 @@ div.innerscroll {
     background-color: var(--mantle);
     color: var(--subtext1);
     font-family: Strawberry;
-}
-header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.main-iframe {
-    width: 70%;
-    display:flex;
-    justify-content:center;
-    max-width:1920px;
-    margin:1rem;
-    flex-direction:column;
-    order: 2;
-}
-.iframe-style {
-    border: none;
-}
-.sidebar-left {
-    height: 100%;
-    position: sticky;
-    order: 1;
-    top: 0;
-    width: 180px;
-}
-.sidebar-right {
-    height: 100%;
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    order: 3;
-    width: 180px;
-}
-p.sidebar-right{
-    font-size:1.2rem;
-    font-weight:300;
-    width: 100%;
-    text-align: center;
-}
-div.sidebar-right {
-    border:solid 5px var(--accent);
-}
-p.sidebar-left{
-    font-size:1.2rem;
-    font-weight:300;
-    width: 100%;
-    text-align: center;
-}
-.progress-background {
-    background-color: var(--overlay1); 
-    width: 100%;
-}
-.progress {
-    height: 1rem; width: 1%; background-color: var(--text);
-}
-.fadeanim {
-    opacity: 0.7;
-    cursor:url(..assets/cursor/pointy.png), pointer;
-}
-.fadeanim:hover {
-    opacity: 1;
-}
-#songcover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }

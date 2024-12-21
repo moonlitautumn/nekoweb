@@ -25,7 +25,7 @@ main{
     padding:1rem;
     font-size:20px;
     line-height:1.6;
-    width:70%;
+    width:90%;
     display:flex;
     justify-content:center;
     max-width:1920px;
@@ -63,7 +63,18 @@ li{
 }
 .border{
     border:solid 5px var(--accent);
-    padding:1rem
+    padding:1rem;
+}
+
+.borderside{
+    border:solid 5px #6c7086;
+    padding:0.5rem;
+    background-color: #11112b;
+    opacity: 0.7;
+}
+.borderside:hover {
+    border: solid 5px #89b4fa;
+    opacity: 1;
 }
 header{
     margin:0;
@@ -133,22 +144,29 @@ p.smth{
     animation-delay:2.5s}@keyframes spinny{0%{transform:translate(0)}to{transform:translate(-100%)}
 }
 #statuscafe {
-    padding: .5em;
-    background-color: var(--base);
-    border: 5Px solid var(--accent);
-    margin-bottom: 1rem;
+    background-color: #11112b;
+    border: 5Px solid #6c7086;
+    margin-top: 1rem;
+    margin-top: 1rem;
+    height: 250px;
+    overflow: scroll;
+    opacity: 0.7;
     
+}
+#statuscafe:hover {
+    opacity: 1;
+    border-color: #89b4fa;
 }
 #statuscafe-username {
     margin: 1rem 1em 0.5em 1em;
-    font-size:2.4rem;
-    font-weight:600
+    font-size:1.2rem;
+    font-weight:300;
 
 }
 #statuscafe-content {
-    margin: 0 1em 0.5em 2em;
-    font-size:1.6rem;
-    font-weight:400;
+    margin: 0 0.5em 0.5em 0.5em;
+    font-size:1.2rem;
+    font-weight:300;
     color: var(--overlay1)
 }
 footer{
@@ -258,4 +276,71 @@ div.innerscroll {
     background-color: var(--mantle);
     color: var(--subtext1);
     font-family: Strawberry;
+}
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main-iframe {
+    width: 70%;
+    display:flex;
+    justify-content:center;
+    max-width:1920px;
+    margin:1rem;
+    flex-direction:column;
+    order: 2;
+}
+.iframe-style {
+    border: none;
+}
+.sidebar-left {
+    height: 100%;
+    position: sticky;
+    order: 1;
+    top: 0;
+    width: 180px;
+}
+.sidebar-right {
+    height: 100%;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    order: 3;
+    width: 180px;
+}
+p.sidebar-right{
+    font-size:1.2rem;
+    font-weight:300;
+    width: 100%;
+    text-align: center;
+}
+div.sidebar-right {
+    border:solid 5px var(--accent);
+}
+p.sidebar-left{
+    font-size:1.2rem;
+    font-weight:300;
+    width: 100%;
+    text-align: center;
+}
+.progress-background {
+    background-color: var(--overlay1); 
+    width: 100%;
+}
+.progress {
+    height: 1rem; width: 1%; background-color: var(--text);
+}
+.fadeanim {
+    opacity: 0.7;
+    cursor:url(assets/cursor/pointy.png), pointer;
+}
+.fadeanim:hover {
+    opacity: 1;
+}
+#songcover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

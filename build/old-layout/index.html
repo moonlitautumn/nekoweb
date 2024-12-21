@@ -6,29 +6,19 @@
 		<link rel="icon" href="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/favicon.ico">
 		<title>waiting for something to happen...?</title>
 		<link rel="stylesheet" href="style.css">
-
-        <script>
-            function resizeIframe(obj) {
-              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-            }
-          </script>
-          
 	</head>   
 	<body>
-		<audio id="ping" src="../assets/audio/pc_messagebox.wav"></audio>
-		<script src="../scripts/oneko.js"></script>
-		<script src="../scripts/lastfm.js"></script>
-		<script src="../scripts/snowww.js"></script>
-		<script src="../scripts/time.js" defer></script>
-		<script src="../scripts/soundon.js"></script>
-		<script src="../scripts/why.js"></script>
-		<script src="../scripts/ost.js"></script>
-        <script src="changeimg.js"></script>
-		<script src="copy.js"></script>
-
+		<audio id="ping" src="assets/audio/pc_messagebox.wav"></audio>
+		<script src="scripts/oneko.js"></script>
+		<script src="scripts/lastfm.js"></script>
+		<script src="scripts/snowww.js"></script>
+		<script src="scripts/time.js" defer></script>
+		<script src="scripts/soundon.js"></script>
+		<script src="scripts/why.js"></script>
+		<script src="scripts/ost.js"></script>
 		<span class="mari">
 			<a href="waitingforsomethingtohappen/index.html">
-				<img src="../assets/imgs/mari.png" width="32px" height="32px" >
+				<img src="assets/imgs/mari.png" width="32px" height="32px" >
 			</a>
 		</span>
 		<p>
@@ -37,130 +27,295 @@
 			</span>
 		</p>
 		<audio id="rain" autoplay loop>
-			<source src="../assets/audio/wind.mp3">
+			<source src="assets/audio/wind.mp3">
 		</audio>
-        <!--not to be changed ^-->
-    
-        <header>
-                <div>
-					<div class="coolstuffsss">
-						<!--button copy code-->
-						<span style="color: var(--overlay1);">
-							<p style="padding-top: 4rem;">
-								my button! >> <img src="https://sillyivy.nekoweb.org/button.gif" class="friends-img fadeanim" onclick="copytext()">
-							</p>
-						</span>
-						
-						<h1>
-							Hiiii &lt;3 🌸🤍  . ݁₊ ⊹ . ݁˖ . ݁
-						</h1>
-						
-						<iframe src="https://nekoweb.org/frame/follow" style="padding-top: 5.5rem;" frameborder="0" width="170" height="31"></iframe>
-						<!--follow on nekoweb-->
-					</div>
-					<h2>
-						welcome to sillyivy.nekoweb.org! 
-						<span style="color: var(--overlay1);" >this place needs a remake ughh</span>
-					</h2> 
-					<hr class="solid">
-                </div>
-        </header>
-        
-        <main>
-            <div style="display: flex;">
-                <!--
-                    sidebar left start
-                -->
-                <aside class="sidebar-left">
-                    <!--statuscafe start!-->
-			        <div id="statuscafe">
-				        <div id="statuscafe-username">
-				        </div>
-				        <div id="statuscafe-content"></div>
-			        </div>		
-			        <script src="https://status.cafe/current-status.js?name=sillyivy" defer>
-			        </script>
-			        <!--statuscafe end!-->
-
-                    <div class="borderside" style="margin-top: 0.6rem;">
-                        <div class="header__inner"> 
-                            <p class="sidebar-left spinny">
-                                <span id="timeago">loading...</span> <br>
-                            </p>
-                            <img style="align-self: center;" src="#" id="songcover"> 
-                            <p class="spinny sidebar-left">    
-                                <a href="#" id="dynamlink"> 
-                                    <span id="song">
-                                        loadinggg...
-                                    </span> 
-                                </a> 
-                            </p> 
-                        </div>
-                    </div> 
-                    <div class="borderside" onclick="osttoggle()" style="cursor:url('pointy.png'), pointer; margin-top: 0.6rem;">
-                        <p style="text-align: center;" class="sidebar-left">
-                            ost status: <br>[ <span id="toggle">paused :(</span> ]<br><span id="byee" style="color: var(--overlay1);"> click here to toggle!</span>
-                        </p>
-                    </div>
-                    <audio id="ost" loop > 
-                        <source src="../assets/audio/celeste.mp3">
-                    </audio>
-
-                    <p style="font-size: 0.5rem; color: var(--overlay1);">
-                        <a href="youarevalid/index.html">pssst click here for validation!</a> 
-                    </p> 
-                    
-                </aside>
-                <!--
-                    sidebar left end
-                -->
-		    
-                <div class="main-iframe">
-                    <iframe name="mainpage" frameborder="0" scrolling="no" onload="resizeIframe(this)" class="iframe-style" src="https://sillyivy.nekoweb.org/new-layout/main.html"></iframe>
-                </div>
-
-                <!--
-                    sidebar right start
-                -->
-                <aside class="sidebar-right">
-					<div class="progress-background" style="margin-top: 1rem;">
-						<div id="progress" class="progress"></div>
-					</div>
-                    <iframe scrolling="no" id="imgimg" style="border:none;" src="https://dimden.neocities.org/navlink/" width="180" height="180"></iframe>
-                    <div class="coolstuffsss borderside"> 
-                        <p class="sidebar-right"> 
-							<a href="https://sillyivy.nekoweb.org/new-layout/main.html" target="mainpage">main page</a><br>
-                            <a href="blog/index.html" target="mainpage">My Blog 🤍🤍</a> <br> 
-                            <a href="weeklyvideo/index.html" target="mainpage">Video of the week!</a><br>  
-                            <a href="https://status.cafe/users/sillyivy">mood 
-                                <img src="https://status.cafe/users/sillyivy/badge.png" alt="Status Cafe Profile"/>
-                            </a><br>
-                            <a href="https://sillyivyluna.atabook.org/" target="mainpage">. ݁₊ ⊹ guest book!</a><br> 
-                            <a href="https://www.youtube.com/watch?v=07OTCXiKEsw">Fav song!</a><br> 
-                        </p> 
-                    </div>
-                    <div class="borderside" style="margin-top: 0.6rem;">
-                        <p class="sidebar-right">
-                          		<script src="../scripts/time.js" defer></script>  its <span id="time" style="color: var(--accent);">loading...</span>
-                        </p>
-                    </div>
-                    <audio id="meow" src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/SE_Cat_Meow.ogg"></audio> 
-                    <span>
-                        <a class="mewo" onclick="document.getElementById('meow').play();"> 
-                            <img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/MEWO.png" width="32px" height="32px"> 
-                        </a>
-                    </span>
-                </aside>
-                <!--
-                    sidebar right end
-                -->
-            </div> 
-            
+		<main> 
+			<h1>
+				Hiiii &lt;3 🌸🤍  . ݁₊ ⊹ . ݁˖ . ݁
+			</h1> 
+			<h2>
+				Thank you for visiting my website! <br> 
+				<span style="color: var(--overlay1);" >this place needs a remake ughh</span>
+			</h2> 
 			<!--
 				hiii you wont really find anything here
 			--> 
-        </main>
-        <footer>
+			<div class="coolstuffsss"> 
+				<p> 
+					<a href="blog/index.html">My Blog/Articles 🤍🤍</a> <br> 
+					<a href="weeklyvideo/index.html">Video of the week!</a><br>  
+					<a href="https://status.cafe/users/sillyivy">Current mood 
+						<img src="https://status.cafe/users/sillyivy/badge.png" alt="Status Cafe Profile"/>
+					</a><br>
+					<a href="https://sillyivyluna.atabook.org/">. ݁₊ ⊹ . ݁˖ . ݁ guest book!</a><br> 
+					<a href="https://www.youtube.com/watch?v=07OTCXiKEsw">Fav song/playlist! (last changed 6/12)</a><br> 
+				</p> 
+				<div> 
+					<p class="smth">
+						adssss
+					</p> 
+					<iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe> 
+				</div> 
+				<div>
+					<p class="smth">
+						random pic whoaa
+					</p>
+					<a href="https://piclog.blue/profile.php?id=856">
+						<img src="https://piclog.blue/latest.php?id=856" class="myimg">
+					</a>
+				</div>
+			</div> 
+			<div> 
+				<p class="spinny"> 
+					<span>
+						webbedsite ost thingy oh ma gah (featuring the celeste ost!)
+					</span> 
+				</p> 
+				<p class="spinny spinny2"> 
+					<span>
+						webbedsite ost thingy oh ma gah (featuring the celeste ost!)
+					</span> 
+				</p> 
+			</div> 
+			<div class="border" onclick="osttoggle()" style="cursor:url('pointy.png'), pointer;">
+				<p style="text-align: center;">
+					ost status: [ <span id="toggle">paused :(</span> <span id="byee" style="color: var(--overlay1);">click here to toggle!</span> ]
+				</p>
+			</div>
+			<audio id="ost" loop > 
+				<source src="assets/audio/celeste.mp3">
+			</audio>
+			<div class="header__inner"> 
+				<p>
+					latest played song on
+					<a href="https://www.last.fm/user/sillygirlivy" target="_blank">last.fm:</a> 
+				</p> 
+				<p>
+					<img src="#" id="songcover"> &gt;&gt;
+						
+					<a href="#" id="dynamlink"> 
+						<span id="song">
+							loadinggg...
+						</span> 
+					</a> 
+				</p> 
+				<p>
+					status: <span id="timeago" style="color: var(--accent);">loading...</span>
+				</p>
+			</div> 
+			<h2>
+				about meeeeeeeee<span style="font-size: 1.6rem;">eeeeee</span><span style="font-size: 1rem;">eeee...</span>
+			</h2> 
+			<div class="coolstuffsss">
+				<h3 style="margin-top: 0;">
+					my name is
+					<span style="color: var(--accent)">
+						Ivy
+					</span> 
+					<span style="color: var(--overlay1); font-size: 1.6rem; font-weight: 400;">
+						aka: Luna!
+					</span> <br>  
+					<a href="https://en.pronouns.page/@autumnivyluna">she/her</a> <br>
+					inxp-t!
+					<span style="color: var(--overlay1); font-size: 1.6rem; font-weight: 400;">
+						idk if im infp or intp soooooo
+					</span> <br>
+					Brazilian + Briish ✨🌒 <br>
+					MAJOR YONKAGOR FAN <br>
+					<span style="color: var(--overlay1); font-size: 1.6rem; font-weight: 400;">
+						what can i say
+						<a style="text-decoration: none;" href="https://files.catbox.moe/sjalun.png"> 
+							<span style="color: var(--overlay1);">
+								im a furry -w-'
+							</span> 
+						</a> 
+					</span> 
+				</h3>
+				<div id="vocaring">
+					<script src="https://webring.adilene.net/widget.js">
+					</script>
+				</div>
+			</div>
+			<!--statuscafe start!-->
+			<div id="statuscafe">
+				<div id="statuscafe-username">
+				</div>
+				<div id="statuscafe-content"></div>
+			</div>		
+			<script src="https://status.cafe/current-status.js?name=sillyivy" defer>
+			</script>
+			<!--statuscafe end!-->
+			<div class="border" style="margin-bottom: 1rem;">
+				<h2 class="playlist">my mix! . ݁₊ ⊹ . ݁˖ . ݁</h2>
+				<iframe src="https://sillyivy.nekoweb.org/iframes/musicplayer/music.html?list=PLrEiDOnraDDvGMEp21qjcby79c5BXlSDe&shuffle" style="width: calc(100% - 16px * 2);height: 108px;display: block;margin:16px;">
+				</iframe>
+				<p class="playlist">tyyyy <a href="https://lilithdev.neocities.org">lilithdev!</a><span style="color: var(--overlay1)"> (btw i LOVE your website!)</span></p>	
+			</div>
+			<div class="border"> 
+				<h2>whoaaa who is this person???</h2> 
+				<p>
+					I'm a 17 year old 
+					<span style="color: var(--overlay1)">
+						(probably audhd-tistic)
+					</span>
+					girl thats LOVE<i>S</i> spending time <i>o</i>n her pc
+				</p> 
+				<p>
+					programming, pentesting, computers in genera<i>l</i>, like I will literally spend 
+					my whole day in front of my computer ju<i>s</i>t developing and working on random s<i>t</i>uff I 
+					think is Cool!
+				</p> 
+				<p> 
+					<span style="color: var(--overlay1)">
+						<i>i</i> like python, html/css, c#, java, bash, js and LINUX I HECKING LOVE LINUX
+					</span> 
+				</p> 
+				<p> 
+					<a href="https://github.com/moonlitautumn/">my github thingy </a> 
+				</p> 
+				<p>
+					I love watching anime and playing rpgs like omori, undertale, nso, oneshot, deltarune + some sanbox <i>c</i>hill games like <a href="https://namemc.com/profile/moonlitivy">minecraft</a>, stard<i>e</i>w, fields of mistria, webfishing
+				</p> 
+				<p>
+					my <a href="https://anilist.co/user/moonlitivy/">anilist!</a> 
+				</p> 
+				<p>
+					im learning japanese and russian! im okayish(i think?) at german and speak english and portuguese 🌸🌸
+				</p> 
+				<p>
+					feel free to text me whenever at
+					<a href="https://discordapp.com/users/720004294748799106" target="_blank">moonlitautumn_ </a>
+					dont be a weirdo or an emotional leach if i dont know you though (plssssssss)
+				</p> 
+				<p>
+					Official windows, capitalism and apple hater (honestly why do ppl even buy apple stuffs)
+				</p> 
+				<p>
+					learning witchcraft &gt;:3
+				</p> 
+				<p>
+					having a gender crisis?? ask this website if you're trans! 
+					<span style="color: var(--overlay1)">
+						tip: allow autoplay :3
+					</span> 
+				</p>
+				<p>
+					my bsky tag is this websites url ^^
+				</p>
+				<p>
+					i'm ricing my pc but no dotfiles for now! <br> 
+					<a href="https://files.catbox.moe/kbtzf9.png" target="_blank"> 
+						<span style="color: var(--accent);">i use Arch btw :33 </span> 
+					</a> 
+				</p> 
+				<p onclick="why()">
+					<span style="color: var(--accent); cursor: url('pointy.png'), pointer;">
+						click here to simulate astigmatism!
+					</span>
+				</p>
+				<p>
+					its <span id="time" style="color: var(--accent);">loading...</span> in my timezone!
+				</p>
+				<p>
+					the void is caring, the void is loving, the void is ò̸̮u̴̱͌ṫ̶̠͔ ̷̼̈́o̵̪͑f̵̩͎̂ ̵̫͗͛b̴̼̹͗͠o̵̼͐͊ų̵̘̏́n̴̞̅̋d̶͔̯̈s̸͇͖̃
+				</p>
+				<p>
+					this website holds a part of my soul, 
+					<span style="color: var(--accent);">dont forget to explore with devtools on!</span>
+				</p>
+			</div> 
+			<h3>
+				Me &lt;&lt;&lt; <span style="color: var(--accent)">✨gay asf✨</span> 🩷💜💙 🩷🤍🩷 (chronically confused about sexuality -w-')
+			</h3>
+
+			<!--visits counter by me!-->
+			<div class="border">
+				<h2>
+					webbedsite stats & updates!
+				</h2>
+					<p>
+						<span style="color: var(--accent); font-size: 2.4rem; font-weight: 500;" id="stats">
+							loading... 
+						</span>	
+						visits WOWIE! 
+						<span style="color: var(--overlay1)">
+							(pls visit this website more i NEED more attention aaaaaa)
+						</span>
+					</p>
+					<hr class="solid">
+					<div class="innerscroll">
+						<p>
+							(19/12/2024) <br>
+							- fixed uggly ost bar <br>
+							- added custom cursors <br>
+							- misc text <br>
+							- improved video of the week player <br>
+							- made code a tiny bit more efficient <br>
+							- added another #### ^^<br>
+							- added music player and stopped hotlinking it 3hrs later<br>
+						</p>
+						<p>
+							(18/12/2024) <br>
+							- added snow effect <br>
+							- added #####! <br>
+							- added wind sfx! <br>
+							- improved last fm api call function<br>  
+							- improved colours (tyy Owen and Remi!)<br>	
+							<span style="color: var(--overlay1)">
+								credits for most of the code go to <a href="https://blackspace.nekoweb.org">blackspace.nekoweb.org!!</a>
+							</span>
+						</p>
+					</div>
+					
+			</div> 
+			<!--visits counter end!-->
+			<script type="text/javascript">
+				let stats = document.querySelector('#stats');
+				let url2 = 'https://nekoweb.org/api/site/info/sillyivy';
+				fetch(url2)
+					.then(
+						function (response) {
+							return response.json()
+						}
+					).then(
+						function (json) {
+							stats.innerHTML = json['views'];		
+						}
+					);
+			</script>
+			<h2>
+				Favourite things
+			</h2> 
+			<ul> 
+				<li>
+					My friends (LOVE YALL SM) <br> 
+				</li> 
+				<li>
+					My friends again &lt;3 <br> 
+				</li> 
+				<li>
+					basically any type of Music <br> 
+				</li> 
+				<li>
+					programming and computers (expecially if it runs linux!) <br> 
+				</li> 
+				<li>
+					CATS AND RED PANDASSSAGSHJDGKAJFSDG<br> 
+				</li> 
+			</ul> 
+			<p style="font-size: 0.5rem; color: var(--overlay1);">
+				<a href="youarevalid/index.html">pssst click here for validation!</a> 
+			</p> 
+			<audio id="meow" src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/SE_Cat_Meow.ogg"></audio> 
+			<span>
+				<a class="mewo" onclick="document.getElementById('meow').play();"> 
+					<img src="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/MEWO.png" width="32px" height="32px"> 
+				</a>
+			</span>
+			
+		
+		</main> 
+		<footer>
 			<p class="feet">
 				Cool stuff!
 			</p>
@@ -272,6 +427,6 @@
 					<a href="https://baccyflap.com/noai/?nxt&s=len" target="_top" title="next">»</a>
 				</div> 
 			</div>
-		</footer>
-    </body>
+		</footer>	
+	</body>	
 </html> 
