@@ -308,3 +308,10 @@ p.sidebar-left{
     width: 100%;
     text-align: center;
 }
+.progress-background {
+    background-color: var(--overlay1); 
+    width: 100%;
+}
+.progress {
+    height: 1rem; width: 1%; background-color: var(--text);
+}
