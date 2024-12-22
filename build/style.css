@@ -115,6 +115,14 @@ div.coolstuffsss{
     padding:1rem;
     width:fit-content
 }
+div.coolstuffsss2ig{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+    margin:0;
+    padding:0rem 1rem;
+    width:fit-content
+}
 p.feet{
     margin:0;
     padding:1rem;
