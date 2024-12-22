@@ -6,10 +6,10 @@
                 var imageURLs = [
                     "https://sillyivy.nekoweb.org/assets/imgs/mossy1.png"];
                 function getImageTag() {
-                    var img = '<img src=\"';
+                    var img = '<a href=\"../art-gallery/index.html\" title=\"click to go to art gallery!\"><img src=\"';
                     var randomIndex = Math.floor(Math.random() * imageURLs.length);
                     img += imageURLs[randomIndex];
-                    img += '\" class=\"myimg\"/>';
+                    img += '\" class=\"myimg\"/></a>';
                     return img;
                 }
             </script>
