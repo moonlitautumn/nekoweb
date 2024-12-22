@@ -68,9 +68,10 @@ li{
 
 .borderside{
     border:solid 5px #6c7086;
-    padding:0.5rem;
+    padding:5px;
     background-color: #11112b;
     opacity: 0.7;
+    width: 160px;
 }
 .borderside:hover {
     border: solid 5px #89b4fa;
