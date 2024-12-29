@@ -354,5 +354,6 @@ p.sidebar-left{
     width: 50%;
 }
 .webring {
-    align-self: center;
+    top: 20;
+    position: absolute;
 }
