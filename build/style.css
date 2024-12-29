@@ -258,9 +258,9 @@ footer{
 }
 #byebye {
     opacity: 0.8;
-    position: absolute;
+    /*position: absolute;
     top: 20px;
-    left: 20px;
+    left: 20px;*/
     cursor: pointer;
 }
 #byebye:hover {
