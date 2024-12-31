@@ -160,7 +160,7 @@ p.smth{
 .bouncy span{
     position: relative;
     display: inline-block;
-    animation:bouncy 2s infinite;
+    animation:bouncy 3s infinite;
     animation-delay: calc(.1s * var(--i));
 }
 @keyframes bouncy{
