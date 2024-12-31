@@ -155,7 +155,8 @@ p.smth{
 .stamps{
     margin:0 auto;
     white-space:nowrap;
-    overflow:hidden
+    overflow:hidden;
+    width: 40rem;
 }
 .stamps span{
     display:inline-block;
