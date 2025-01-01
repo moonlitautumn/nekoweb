@@ -1,0 +1,15 @@
+<rss version="2.0">
+  	<channel>
+    	<title>turn on your pc..?</title>
+    	<description>random stuff and updates!</description>
+    	<link>https://sillyivy.nekoweb.org</link>
+
+    	<item>
+      		<title>FIRST POST!!</title>
+      		<description>HAPPY NEW YEAR EVERYBODY!! i hope next year is awesome ^^</description>
+      		<link>https://sillyivy.nekoweb.org</link>
+      		<guid>post-1</guid>
+      		<pubDate>Wed, 01 Jan 25 05:36:17 -0300</pubDate>
+    	</item>
+   	</channel>
+</rss>
