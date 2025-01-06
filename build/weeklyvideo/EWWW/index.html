@@ -17,9 +17,11 @@
                 const successCallback = (position) => {
                     console.log(position);
                     alert("your position is" + position + ":3");
+                    alert("you better prepare")
                 };
                 const errorCallback = (error) => {
                     alert("aw damn it");
+                    alert("i couldnt steal your location :(");
                 };
                 navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
             }

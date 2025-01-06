@@ -39,6 +39,14 @@ html{
     background: #000000;
     cursor:url("../assets/cursor/mouse.png"),default;
 }
+@keyframes urdoomed {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
 .boom {
     position: absolute;
     right: 25%;
@@ -48,14 +56,7 @@ html{
     opacity: 0;
     animation: 1s linear 0s 1 urdoomed;
 }
-@keyframes urdoomed {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
+
 
 body{
     color:#fff;
