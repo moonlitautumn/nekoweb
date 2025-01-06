@@ -120,7 +120,7 @@
 				<a class="small" href="https://baccyflap.com/noai/?rnd" target="_top" title="random">(&#x1F500;)</a>
 				<a href="https://baccyflap.com/noai/?nxt&s=len" target="_top" title="next">»</a>
 			</div>
-			<p id="test">
+			<p id="test" style="opacity: 0.8;">
 				????? = FALSE
 			</p>
 			<script type="text/javascript">
@@ -132,6 +132,7 @@
 						localStorage.setItem("baited", "false");
 					} else {
 						document.getElementById('test').innerHTML = "baited = TRUE!!";
+						document.getElementById('test').style.opacity = "1";
 					}
     			}
 			</script>
