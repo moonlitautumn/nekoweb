@@ -6,17 +6,22 @@
                 var imageURLs = [
                     "https://sillyivy.nekoweb.org/assets/videos/edit1.mp4",];
                 function getImageTag() {
-                    var img = '<video id=\"vidd\" src=\"';
+                    var img = '<video id=\"vidd\" class=\"myimg\" autoplay disablepictureinpicture loop muted preload=\"auto\" onclick=\"playaudio()\"><source src=\"';
                     var randomIndex = Math.floor(Math.random() * imageURLs.length);
                     img += imageURLs[randomIndex];
-                    img += '\" class=\"myimg\" autoplay disablepictureinpicture loop muted preload=\"auto\" onclick=\"playaudio()\"/>';
+                    img += '\" type=\"video/mp4\"></video>';
                     return img;
                 }
                 function playaudio() {
                     document.getElementById("vidd").muted = (document.getElementById("vidd").muted=="false") ? "true":"false";
                 }
             </script>
-    </head>
+    </head> 
+    <!--
+        <video id="vidd" class="myimg" autoplay disablepictureinpicture loop muted preload="auto" onclick="playaudio()"> 
+            <source src="" type="video/mp4">
+        </video>
+    -->
     <body>
         <style>
             .myimg {

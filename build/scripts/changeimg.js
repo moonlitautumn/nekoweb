@@ -1,5 +1,5 @@
 var frames = Array(
-    'https://sillyivy.nekoweb.org/new-layout/randompic.html',
+    'https://sillyivy.nekoweb.org/randompic.html',
     'https://dimden.neocities.org/navlink/',
     'https://sillyivy.nekoweb.org/iframes/random-art/index.html');
 var i = 0, len = frames.length;
