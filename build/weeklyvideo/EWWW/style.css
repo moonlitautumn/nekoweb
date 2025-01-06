@@ -1,0 +1,83 @@
+@font-face{
+    font-family:Strawberry;
+    src:url("../assets/fonts/Strawberry.woff");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap}
+:root{
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --yellow: #f9e2af;
+    --green: #a6e3a1;
+    --teal: #94e2d5;
+    --sky: #89dceb;
+    --sapphire: #74c7ec;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --text: #cdd6f4;
+    --subtext1: #bac2de;
+    --subtext0: #a6adc8;
+    --overlay2: #9399b2;
+    --overlay1: #7f849c;
+    --overlay0: #6c7086;
+    --surface2: #585b70;
+    --surface1: #585b70;
+    --surface0: #313244;
+    --base: #1e1e2e;
+    --mantle: #181825;
+    --crust: #11111b
+}
+:root{
+    --accent: var(--pink)
+}
+html{
+    background: #000000;
+    cursor:url("../assets/cursor/mouse.png"),default;
+}
+.boom {
+    position: absolute;
+    right: 40%;
+    top: 35%;
+    image-rendering:crisp-edges;
+    width: 15rem;
+    height: auto;
+    opacity: 0.6;
+    transition: 1s all linear 0s 1 urdoomed;
+}
+@keyframes urdoomed {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+body{
+    color:#fff;
+    font-family:Strawberry,Inter,Avenir,Helvetica,Arial,sans-serif;
+    text-align:center;
+    image-rendering:crisp-edges
+}
+main{
+    padding:1rem;
+    font-size:20px;
+    line-height:1.6;
+    width:70%;
+    display:flex;
+    justify-content:center;
+    max-width:1920px;
+    margin:auto;
+    flex-direction:column
+}
+h1{
+    font-size:4rem;
+    font-weight:700;
+    line-height:1;
+    margin-bottom:1rem
+}
