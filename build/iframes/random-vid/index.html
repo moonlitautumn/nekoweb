@@ -4,12 +4,12 @@
         <title>randomart</title>
             <script type="text/javascript">
                 var imageURLs = [
-                    "https://sillyivy.nekoweb.org/assets/videos/edit1.mp4",];
+                    "https://sillyivy.nekoweb.org/assets/videos/edit1.webm",];
                 function getImageTag() {
                     var img = '<video id=\"vidd\" class=\"myimg\" autoplay disablepictureinpicture loop muted preload=\"auto\" onclick=\"playaudio()\"><source src=\"';
                     var randomIndex = Math.floor(Math.random() * imageURLs.length);
                     img += imageURLs[randomIndex];
-                    img += '\" type=\"video/mp4\"></video>';
+                    img += '\" type=\"video/webm\"></video>';
                     return img;
                 }
                 function playaudio() {
