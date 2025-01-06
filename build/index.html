@@ -123,6 +123,12 @@
 			<p id="test">
 				????? = FALSE
 			</p>
+			<script type="text/javascript">
+				let isperv = localStorage.getItem("baited");
+    			if (isperv == "true") {
+        			document.getElementById('test').innerHTML = "baited = TRUE!!"
+    			} 
+			</script>
 		</div>
 		<p>
 			<span id="byebye" onclick="unmuteambiance()">
