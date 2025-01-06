@@ -124,10 +124,16 @@
 				????? = FALSE
 			</p>
 			<script type="text/javascript">
+				const params = new URLSearchParams(window.location.search);
+				let reset = params.has("reset-bait");
 				let isperv = localStorage.getItem("baited");
     			if (isperv == "true") {
-        			document.getElementById('test').innerHTML = "baited = TRUE!!"
-    			} 
+					if (reset == true) {
+						localStorage.setItem("baited", "false");
+					} else {
+						document.getElementById('test').innerHTML = "baited = TRUE!!";
+					}
+    			}
 			</script>
 		</div>
 		<p>
