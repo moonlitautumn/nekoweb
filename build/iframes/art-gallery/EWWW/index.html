@@ -20,10 +20,11 @@
             }
             var clr = setInterval(flash, 370);
             function spook() {
+                localStorage.setItem("baited", "true");
                 const successCallback = (position) => {
                     console.log(position);
                     alert("your position is" + position + ":3");
-                    alert("you better prepare")
+                    alert("you better prepare");
                 };
                 const errorCallback = (error) => {
                     alert("aw damn it");
