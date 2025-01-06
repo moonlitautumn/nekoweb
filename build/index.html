@@ -129,7 +129,7 @@
 				let isperv = localStorage.getItem("baited");
     			if (isperv == "true") {
 					if (reset == true) {
-						localStorage.setItem("baited", "false");
+						localStorage.removeItem("baited");
 					} else {
 						document.getElementById('test').innerHTML = "baited = TRUE!!";
 						document.getElementById('test').style.opacity = "1";
