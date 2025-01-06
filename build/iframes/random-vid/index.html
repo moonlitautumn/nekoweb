@@ -23,6 +23,7 @@
         <audio id="hovered" src="../../assets/audio/menu_cursor_1.wav" ></audio>
         <audio id="clicked" src="../../assets/audio/menu_decision.wav"></audio>
         <audio id="clicked-backup" src="../../assets/audio/menu_decision.wav"></audio>
+        <audio id="clicked-backup1" src="../../assets/audio/menu_decision.wav"></audio>
         <style>
             .myimg {
                 max-width: 180px;
@@ -40,10 +41,13 @@
             function playaudioo() {
                 let soundeffect = document.getElementById('clicked');
                 let soundeffectbackup = document.getElementById('clicked-backup');
+                let soundeffectbackup1 = document.getElementById('clicked-backup1');
                 if (soundeffect.paused) {
                     soundeffect.play();
-                } else {
+                } else if (soundeffectbackup.paused) {
                     soundeffectbackup.play();
+                } else {
+                    soundeffectbackup1.play();
                 }
                 document.getElementById("vidd").muted = (document.getElementById("vidd").muted==true) ? false:true;
                 console.log("hovered");

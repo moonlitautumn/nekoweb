@@ -11,7 +11,7 @@
                     "https://sillyivy.nekoweb.org/assets/imgs/rose2-1.png",
                     "https://sillyivy.nekoweb.org/assets/imgs/rose3.png"];
                 function getImageTag() {
-                    var img = '<a href=\"../art-gallery/index.html\" title=\"click to go to art gallery!\"><img src=\"';
+                    var img = '<a onmouseenter=\"boop()\" onclick=\"playaudioo()\" href=\"../art-gallery/index.html\" title=\"click to go to art gallery!\"><img src=\"';
                     var randomIndex = Math.floor(Math.random() * imageURLs.length);
                     img += imageURLs[randomIndex];
                     img += '\" class=\"myimg\"/></a>';
@@ -20,6 +20,10 @@
             </script>
     </head>
     <body>
+        <audio id="hovered" src="../../assets/audio/menu_cursor_1.wav" ></audio>
+        <audio id="clicked" src="../../assets/audio/menu_decision.wav"></audio>
+        <audio id="clicked-backup" src="../../assets/audio/menu_decision.wav"></audio>
+        <audio id="clicked-backup1" src="../../assets/audio/menu_decision.wav"></audio>
         <style>
             .myimg {
                 max-width: 180px;
@@ -32,6 +36,26 @@
         </style>
         <script type="text/javascript">
             document.write(getImageTag());
+        </script>
+        <script type="text/javascript">
+            function playaudioo() {
+                let soundeffect = document.getElementById('clicked');
+                let soundeffectbackup = document.getElementById('clicked-backup');
+                let soundeffectbackup1 = document.getElementById('clicked-backup1');
+                if (soundeffect.paused) {
+                    soundeffect.play();
+                } else if (soundeffectbackup.paused) {
+                    soundeffectbackup.play();
+                } else {
+                    soundeffectbackup1.play();
+                }
+                console.log("hovered");
+            }
+            function boop() {
+				let soundeffect1 = document.getElementById('hovered');
+				soundeffect1.volume = 0.5;
+    			soundeffect1.play();
+			}
         </script>
     </body>
 </html>
