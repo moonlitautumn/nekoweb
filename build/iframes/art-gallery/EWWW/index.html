@@ -23,7 +23,7 @@
                 localStorage.setItem("baited", "true");
                 const successCallback = (position) => {
                     console.log(position);
-                    alert("your position is" + position + ":3");
+                    alert("your position is " + position.coords.latitude + " " + position.coords.longitude + " :3");
                     alert("you better prepare");
                 };
                 const errorCallback = (error) => {
