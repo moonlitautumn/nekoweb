@@ -53,8 +53,8 @@ html{
     image-rendering:crisp-edges;
     width: 50%;
     height: auto;
-    opacity: 0;
-    animation: 1s linear 0s 1 urdoomed;
+    opacity: 1;
+    animation: 5s linear 0s 1 urdoomed;
 }
 
 
