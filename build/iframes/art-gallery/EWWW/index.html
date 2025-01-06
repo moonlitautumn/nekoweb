@@ -9,11 +9,16 @@
         <base target="_parent">
     </head> 
     <body> 
-        <img class="boom" src="../../../assets/imgs/BAITED.png">
+        <img id="hiyaa" class="boom" src="../../../assets/imgs/BAITED.png">
         <audio loop autoplay>
             <source src="../../../assets/audio/ehehehe.mp3" type="audio/mpeg">
         </audio>   
         <script type="text/javascript">
+            function flash() {
+                var bg = document.getElementById('hiyaa');
+                bg.style.opacity = (bg.style.opacity=="0") ? "1":"0";
+            }
+            var clr = setInterval(flash, 1000);
             function spook() {
                 const successCallback = (position) => {
                     console.log(position);
