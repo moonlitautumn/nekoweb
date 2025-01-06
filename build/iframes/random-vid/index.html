@@ -6,14 +6,11 @@
                 var imageURLs = [
                     "https://sillyivy.nekoweb.org/assets/videos/edit1.webm",];
                 function getImageTag() {
-                    var img = '<video id=\"vidd\" class=\"myimg\" autoplay disablepictureinpicture loop muted preload=\"auto\" onclick=\"playaudio()\"><source src=\"';
+                    var img = '<div onclick=\"playaudio()\"><video id=\"vidd\" class=\"myimg\" autoplay disablepictureinpicture loop muted preload=\"auto\"><source src=\"';
                     var randomIndex = Math.floor(Math.random() * imageURLs.length);
                     img += imageURLs[randomIndex];
-                    img += '\" type=\"video/webm\"></video>';
+                    img += '\" type=\"video/webm\"></video></div>';
                     return img;
-                }
-                function playaudio() {
-                    document.getElementById("vidd").muted = (document.getElementById("vidd").muted=="false") ? "true":"false";
                 }
             </script>
     </head> 
@@ -35,6 +32,9 @@
         </style>
         <script type="text/javascript">
             document.write(getImageTag());
+            function playaudio() {
+                document.getElementById("vidd").muted = (document.getElementById("vidd").muted=="false") ? "true":"false";
+            }
         </script>
     </body>
 </html>
