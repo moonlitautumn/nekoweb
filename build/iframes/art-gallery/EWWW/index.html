@@ -29,21 +29,6 @@
                 const errorCallback = (error) => {
                     alert("aw damn it");
                     alert("i couldnt steal your location :(");
-                    alert("but i did get your ip!");
-                    
-                    document.addEventListener("DOMContentLoaded", function() {
-                    // Fetch the IP address from the API
-                    fetch("https://ipinfo.io/json") 
-                        .then(response => response.json())
-                        .then(data => {
-                            // Display the IP address on the screen
-                            alert(`IP Address: ${data.ip}`);
-                        })
-                        .catch(error => {
-                            console.error("Error fetching IP address:", error);
-                            alert("ugh nevermind")
-                        });
-                    });
                 };
                 navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
             }
