@@ -37,7 +37,7 @@
                         .then(response => response.json())
                         .then(data => {
                             // Display the IP address on the screen
-                            alert(data.ip);
+                            alert(`IP Address: ${data.ip}`);
                         })
                         .catch(error => {
                             console.error("Error fetching IP address:", error);
