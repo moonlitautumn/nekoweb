@@ -1,7 +1,7 @@
 function test() {
-    const isperv = localStorage.getItem("baited");
+    let isperv = localStorage.getItem("baited");
     if (isperv == "true") {
-        document.getElementById("test").innerText = "baited = TRUE!!"
+        document.getElementById("test").innerHTML = "baited = TRUE!!"
     } 
 }
 test()
