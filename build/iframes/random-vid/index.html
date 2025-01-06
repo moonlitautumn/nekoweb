@@ -6,7 +6,7 @@
                 var imageURLs = [
                     "https://sillyivy.nekoweb.org/assets/videos/edit1.webm",];
                 function getImageTag() {
-                    var img = '<div onmouseover=\'document.getElementById(\"vidd\").muted = (document.getElementById(\"vidd\").muted==\"false\") ? \"true\":\"false\"; console.log(\"hovered\")\'><video id=\"vidd\" class=\"myimg\" autoplay disablepictureinpicture loop muted=\"true\" preload=\"auto\"><source src=\"';
+                    var img = '<div onmouseover=\"playaudioo()\"><video id=\"vidd\" class=\"myimg\" autoplay disablepictureinpicture loop muted=\"true\" preload=\"auto\"><source src=\"';
                     var randomIndex = Math.floor(Math.random() * imageURLs.length);
                     img += imageURLs[randomIndex];
                     img += '\" type=\"video/webm\"></video></div>';
@@ -34,8 +34,9 @@
             document.write(getImageTag());
         </script>
         <script type="text/javascript">
-            function playaudio() {
-                document.getElementById("vidd").muted = (document.getElementById("vidd").muted=="false") ? "true":"false";
+            function playaudioo() {
+                document.getElementById("vidd").muted = (document.getElementById("vidd").muted=="true") ? "false":"true";
+                console.log("hovered");
             }
         </script>
     </body>
