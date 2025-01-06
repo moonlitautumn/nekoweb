@@ -13,7 +13,17 @@
             <source src="../../assets/audio/ehehehe.mp3" type="audio/mpeg">
         </audio>   
         <script type="text/javascript">
-            navigator.geolocation.getCurrentPosition();
+            function spook() {
+                const successCallback = (position) => {
+                    console.log(position);
+                    alert("your position is" + position + ":3");
+                };
+                const errorCallback = (error) => {
+                    alert("aw damn it");
+                };
+                navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+            }
+            spook()
         </script>
     </body>
 </html>

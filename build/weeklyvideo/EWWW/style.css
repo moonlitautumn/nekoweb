@@ -41,13 +41,12 @@ html{
 }
 .boom {
     position: absolute;
-    right: 40%;
-    top: 35%;
+    right: 25%;
     image-rendering:crisp-edges;
-    width: 15rem;
+    width: 50%;
     height: auto;
-    opacity: 0.6;
-    transition: 1s all linear 0s 1 urdoomed;
+    opacity: 0;
+    animation: 1s linear 0s 1 urdoomed;
 }
 @keyframes urdoomed {
     0% {
