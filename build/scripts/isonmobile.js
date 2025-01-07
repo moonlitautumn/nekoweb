@@ -12,9 +12,11 @@ let isMobileDevice = regexp.test(details);
 if (isMobileDevice) { 
     console.log("Mobile Device"); 
 
-    if (localStorage.getItem("notified") != "true") {
-        alert("this website was designed for pc's / wide displays, it will prob look bad on your device!!")
-        localStorage.setItem("notified", "true")
+    if (localStorage.getItem("notified") == "true") {
+        console.log("already alerted");
+    } else {
+        alert("this website was designed for pc's / wide displays, it will prob look bad on your device!!");
+        localStorage.setItem("notified", "true");
     }
 } else { 
     console.log("Desktop"); 
