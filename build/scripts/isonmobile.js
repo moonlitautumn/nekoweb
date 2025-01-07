@@ -16,12 +16,16 @@ if (isMobileDevice) {
     if (reset1) {
         localStorage.removeItem("notified");
         console.log("reset alert");
+        let soundeffect = document.getElementById('ping');
+        soundeffect.play();
         alert("reset device detector!!")
     } else {
         console.log(reset1);
         if (localStorage.getItem("notified") == "true") {
             console.log("already alerted");
         } else {
+            let soundeffect = document.getElementById('ping');
+            soundeffect.play();
             alert("this website was designed for pc's / wide displays, it will prob look bad on your device!!");
             localStorage.setItem("notified", "true");
         }
