@@ -18,6 +18,7 @@ if (isMobileDevice) {
         console.log("reset alert");
         alert("reset device detector!!")
     } else {
+        console.log(reset1);
         if (localStorage.getItem("notified") == "true") {
             console.log("already alerted");
         } else {
