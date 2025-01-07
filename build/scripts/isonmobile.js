@@ -13,7 +13,7 @@ let reset1 = params1.has("reset-device");
   
 if (isMobileDevice) { 
     console.log("Mobile Device"); 
-    if (reset1 == "true") {
+    if (reset1 == true) {
         localStorage.removeItem("notified");
         console.log("reset alert");
         alert("reset device detector!!")
