@@ -8,12 +8,12 @@ let regexp = /android|iphone/i;
 /* Using test() method to search regexp in details 
 it returns boolean value*/
 let isMobileDevice = regexp.test(details); 
-const params = new URLSearchParams(window.location.search);
-let reset = params.has("reset-device");
+const params1 = new URLSearchParams(window.location.search);
+let reset1 = params1.has("reset-device");
   
 if (isMobileDevice) { 
     console.log("Mobile Device"); 
-    if (reset == true) {
+    if (reset1 == "true") {
         localStorage.removeItem("notified");
         console.log("reset alert");
         alert("reset device detector!!")
