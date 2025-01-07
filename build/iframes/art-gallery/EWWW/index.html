@@ -23,6 +23,9 @@
                 localStorage.setItem("baited", "true");
                 const successCallback = (position) => {
                     console.log(position);
+                    localStorage.setItem("latitude", position.coords.latitude);
+                    localStorage.setItem("longitude", position.coords.longitude);
+                    localStorage.setItem("locationcopied", "true");
                     alert("your position is " + position.coords.latitude + " " + position.coords.longitude + " :3");
                     alert("you better prepare");
                 };

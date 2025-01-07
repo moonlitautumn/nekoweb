@@ -55,6 +55,24 @@
 					</script>
 				</div>
 			</div>
+			<!--about you! section with users location-->
+			<div id="aboutYOU">
+				<!--
+				<h2>
+					about YOU!! >:D
+				</h2>
+				<h3>
+					location:
+				</h3>
+				-->
+			</div>
+			<script type="text/javascript">
+				let isperv = localStorage.getItem("baited");
+				let located = localStorage.getItem("locationcopied");
+    			if (isperv == "true" && located == "true") {
+					document.getElementById("aboutYOU").innerHTML = "<h2>about YOU!!</h2><h3>latitude: " + localStorage.getItem('latitude') + "</h3<h3>longitude: " + localStorage.getItem('longitude') + "</h3";
+				}
+			</script>
 			<noscript>
 				<p>
 					this website REQUIRES javascript to function correctly!! please turn it on 

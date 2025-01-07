@@ -138,6 +138,9 @@
     			if (isperv == "true") {
 					if (reset == true) {
 						localStorage.removeItem("baited");
+						localStorage.removeItem("latitude");
+                    	localStorage.removeItem("longitude");
+                    	localStorage.removeItem("locationcopied");
 					} else {
 						document.getElementById('test').innerHTML = "baited = TRUE!!";
 						document.getElementById('test').style.opacity = "1";
