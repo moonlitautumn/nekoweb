@@ -15,6 +15,8 @@ if (isMobileDevice) {
     console.log("Mobile Device"); 
     if (reset == true) {
         localStorage.removeItem("notified");
+        console.log("reset alert");
+        alert("reset device detector!!")
     } else {
         if (localStorage.getItem("notified") == "true") {
             console.log("already alerted");
