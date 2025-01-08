@@ -109,11 +109,11 @@ a:hover,a:active{
     opacity: 1;
 }
 .progress-background {
-    background-color: #D7AC59; 
+    background-color: #6380DB; 
     width: 100%;
 }
 .progress {
-    height: 1rem; width: 1%; background-color: #6380DB;
+    height: 1rem; width: 1%; background-color: #D7AC59;
 }
 div.coolstuffsss{
     display:flex;
