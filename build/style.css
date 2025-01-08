@@ -386,3 +386,9 @@ p.sidebar-left{
 .webring {
     top: 20;
 }
+.changeonhover {
+    opacity: 0.8;
+}
+.changeonhover:hover {
+    opacity: 1;
+}
