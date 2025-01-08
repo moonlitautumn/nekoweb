@@ -11,7 +11,7 @@ let reset1 = params1.has("reset-diary");
     if (localStorage.getItem("seen-diary") == "true") {
         console.log("silence");
     } else {
-        document.getElementById('music').src = "";
+        document.getElementById('music').muted = "true";
         localStorage.setItem("seen-diary", "true");
     }
 }
