@@ -5,10 +5,10 @@ function unmuteambiance() {
 
 	if (audio.muted) {
     	audio.muted = false;
-        hidee.innerHTML = "wind unmuted ^^";
+        hidee.innerHTML = "wind unmuted";
 	} else {
         audio.muted = true;
-        hidee.innerHTML = "wind muted...";
+        hidee.innerHTML = "wind muted";
     }
     
 }
