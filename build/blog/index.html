@@ -11,75 +11,90 @@
     </head> 
     <body> 
         <main> 
+            <style>
+                .border {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    border: solid 5px #6c7086;
+                }
+                .border:hover {
+                    border-color: #f5c2e7;
+                }
+            </style>
             <h1>
-                My blog! <!--set blog as a subdirectory so it doesnt clutter up the main page and so i can add friend icons later --> 
+                semi-random 4am thoughts <!--set blog as a subdirectory so it doesnt clutter up the main page and so i can add friend icons later --> 
             </h1> 
             <p>
-                This will be mostly comprised of non personal stuff that would be worth putting in an rss post!! (check my diary if you want my raw thoughts) 
+                This will be mostly comprised of non personal stuff that would be worth putting in an rss post! <span style="color: var(--overlay1);" id="diary">visit my diary if you want my raw (maybe depressing) thoughts</span> 
             </p>
+            <script type="text/javascript">
+                if (localStorage.getItem("seen-diary") == "true") {
+                    document.getElementById("diary").innerHTML = "thank you for visiting my diary!";
+                } 
+            </script>
             <h2>
                 Articles
             </h2> <!--blog 9! --> 
-            <div> 
+            <di class="border"> 
                 <h3> 
                     <a href="blog9/index.html">
-                        7/1/2025 drawing tablets r da BEST
+                        <span style="color: var(--overlay1);">7/1/2025 - </span>drawing tablets r da BEST
                     </a> 
                 </h3> 
             </div> <!--blog 8! --> 
             <div class="border"> 
                 <h3> 
                     <a href="blog8/index.html">
-                         <span style="color: var(--overlay1);">3/1/2025</span>- squid game and tiktok
+                         <span style="color: var(--overlay1);">3/1/2025 - </span>squid game and tiktok
                     </a> 
                 </h3> 
             </div> <!--blog 7! --> 
             <div class="border"> 
                 <h3> 
                     <a href="blog7/index.html">
-                        12/10/2024 derealization
+                        <span style="color: var(--overlay1);">12/10/2024 - </span>derealization
                     </a> 
                 </h3> 
             </div> <!--blog 6! --> 
-            <div> 
+            <div class="border"> 
                 <h3> 
                     <a href="blog6/index.html">
-                        14/09/2024 im scared
+                        <span style="color: var(--overlay1);">14/09/2024  - </span>im scared
                     </a> 
                 </h3> 
             </div> <!--blog 5! --> 
-            <div> 
+            <div class="border"> 
                 <h3> 
                     <a href="blog5/index.html">
-                        3/09/2024 I BOUGHT SOMETHING
+                        <span style="color: var(--overlay1);">3/09/2024 - </span>I BOUGHT SOMETHING
                     </a> 
                 </h3> 
             </div> <!--blog 4! --> 
-            <div> 
+            <div class="border"> 
                 <h3> 
                     <a href="blog4/index.html">
-                        28/08/2024 patriarchy and society
+                        <span style="color: var(--overlay1);">28/08/2024 - </span>patriarchy and society
                     </a> 
                 </h3> 
             </div> <!--blog 3! --> 
-            <div> 
+            <div class="border"> 
                 <h3> 
                     <a href="blog3/index.html">
-                        25/08/2024 AJGASGHDJASHFGDJASHGDJ
+                        <span style="color: var(--overlay1);">25/08/2024 - </span>AJGASGHDJASHFGDJASHGDJ
                     </a> 
                 </h3> 
             </div> <!--blog 2! --> 
-            <div> 
+            <div class="border"> 
                 <h3> 
                     <a href="blog2/index.html">
-                        20/08/2024 new fav song! (and a special message to a special someone!)
+                        <span style="color: var(--overlay1);">20/08/2024 - </span>new fav song! (and a special message to a special someone!)
                     </a> 
                 </h3> 
             </div> <!--blog 1! --> 
-            <div> 
+            <div class="border"> 
                 <h3> 
                     <a href="blog1/index.html">
-                        19/08/2024 NEW POST WOOOOO
+                        <span style="color: var(--overlay1);">19/08/2024 - </span>NEW POST WOOOOO
                     </a> 
                 </h3>  
             </div> <!--
