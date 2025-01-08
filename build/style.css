@@ -388,7 +388,46 @@ p.sidebar-left{
 }
 .changeonhover {
     opacity: 0.8;
+    animation: 1s ease-in-out infinite idle;
+    image-rendering: pixelated;
 }
 .changeonhover:hover {
     opacity: 1;
+    animation: 0.21s ease-in-out infinite wobble;
+}
+/* +++ Pet Annimations from tamonotchi +++ */
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes idle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-9deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(11deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
