@@ -388,7 +388,7 @@ p.sidebar-left{
 }
 .changeonhover {
     opacity: 0.8;
-    animation: 1s ease-in-out infinite idle;
+    animation: 5s step-start infinite idle;
     image-rendering: pixelated;
 }
 .changeonhover:hover {
