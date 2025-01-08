@@ -10,8 +10,8 @@ let reset1 = params1.has("reset-diary");
     console.log(reset1);
     if (localStorage.getItem("seen-diary") == "true") {
         console.log("silence");
-    } else {
         document.getElementById('music').muted = "true";
+    } else {
         localStorage.setItem("seen-diary", "true");
     }
 }
