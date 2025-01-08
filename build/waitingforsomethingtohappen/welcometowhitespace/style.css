@@ -108,3 +108,10 @@ a:hover,a:active{
 #byebye:hover {
     opacity: 1;
 }
+.progress-background {
+    background-color: var(--overlay1); 
+    width: 100%;
+}
+.progress {
+    height: 1rem; width: 1%; background-color: #FF4B47;
+}
