@@ -296,6 +296,13 @@ footer{
 #byebye:hover {
     opacity: 1;
 }
+#byebye2 {
+    opacity: 0.8;
+    cursor: pointer;
+}
+#byebye2:hover {
+    opacity: 1;
+}
 p.playlist {
     margin: 0; 
     margin-left: 1.5rem;
