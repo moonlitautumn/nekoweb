@@ -298,7 +298,7 @@ footer{
 }
 #byebye2 {
     opacity: 0.8;
-    cursor: pointer;
+    cursor:url(assets/cursor/pointy.png), pointer;
     text-align: center;
 }
 #byebye2:hover {
