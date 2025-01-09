@@ -299,6 +299,7 @@ footer{
 #byebye2 {
     opacity: 0.8;
     cursor: pointer;
+    text-align: center;
 }
 #byebye2:hover {
     opacity: 1;
