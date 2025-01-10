@@ -330,7 +330,7 @@ header {
     text-align: center;
 }
 .main-iframe {
-    width: 70%;
+    width: 100%;
     display:flex;
     justify-content:center;
     max-width:1920px;
