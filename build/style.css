@@ -441,14 +441,14 @@ p.sidebar-left{
 }
 .flash {
     opacity: 1;
-    animation: 1s linear infinite flashing;
+    animation: 1.5s linear infinite flashing;
 }
 @keyframes flashing {
     0% {
         opacity: 1;
     }
     50% {
-        opacity: 0.5;
+        opacity: 0.2;
     }
     100% {
         opacity: 1;
