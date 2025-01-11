@@ -96,9 +96,14 @@ a:hover,a:active{
     text-decoration-color:var(--subtext1);
     color:var(--subtext1)
 }
-img.friends-img{height:31px;
+img.friends-img{
+    height:31px;
     width:88px;
-    image-rendering:pixelated
+    image-rendering:pixelated;
+    transition: transform .2s;
+}
+img.friends-img:hover {
+    transform: scale(1.5);
 }
 div.friends{
     display:flex;
