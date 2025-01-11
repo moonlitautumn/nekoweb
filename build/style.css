@@ -73,7 +73,6 @@ li{
     background-color: #11112b;
     opacity: 0.7;
     width: 160px;
-    border-radius: 5px;
 }
 .borderside:hover {
     border: solid 5px #89b4fa;
