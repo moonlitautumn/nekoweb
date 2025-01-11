@@ -64,7 +64,6 @@ li{
 .border{
     border:solid 5px var(--accent);
     padding:1rem;
-    border-radius: 5px;
 }
 
 .borderside{
