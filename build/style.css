@@ -516,6 +516,8 @@ p.sidebar-left{
     font-family: codethingy;
     transition: transform .15s;
     width: 50%;
+    font-size: 3rem;
+    margin-right: 3rem;
 }
 .sendmsgfield:hover {
     transform: scale(1.25);
@@ -530,6 +532,7 @@ p.sidebar-left{
     padding: 15px;
     font-family: codethingy;
     transition: transform .15s;
+    font-size: 3rem;
 }
 .sendmsgbutton:hover {
     transform: scale(1.25);
