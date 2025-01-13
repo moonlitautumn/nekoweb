@@ -169,8 +169,8 @@ p.smth{
 }
 @keyframes spinny{
     0%{
-        transform:translate(0%)
-    }100%{
+        transform:translate(0)
+    }to{
         transform: translate(100%);
     }
 }
