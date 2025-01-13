@@ -85,12 +85,10 @@ li{
 .plasmatrap {
     border:solid 5px #86746c;
     border-radius: 10px;
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .plasmatrap:hover {
-    border:solid 5px --peach;
+    border:solid 5px var(--peach);
 }
 .dynamiciframe {
     border-radius: 10px;
