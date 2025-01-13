@@ -11,7 +11,7 @@
 	<body>
 		<audio id="ping" src="assets/audio/pc_messagebox.wav"></audio>
 		<script src="scripts/why.js"></script>
-		<script src="scripts/sendmenotif.js"></script>
+		<script src="scripts/sendmenotif.js" defer></script>
         <style>
             main {
                 padding: 0;
@@ -168,11 +168,11 @@
 			</div>
 			
 			<h2># my plasmatrap feed :3</h2>	
-			<div style="height: 340px; margin: auto; margin-bottom: 2rem;" class="plasmatrap">
+			<div style="height: 340px; margin-bottom: 2rem;">
 				<iframe src="https://plasmatrap.com/embed/user-timeline/a2vho39nrc?header=false&maxHeight=500&colorMode=dark&rounded=false&border=false" 
 				data-misskey-embed-id="v1_3c2f7189-6c74-49d4-b9f2-0503ff1febc0" 
 				referrerpolicy="strict-origin-when-cross-origin" 
-				style="width: 100%; max-width: 500px; height: 300px; color-scheme: light dark;"></iframe>
+				style="border:10px var(--peach); border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; width: 100%; max-width: 500px; height: 300px; color-scheme: light dark;"></iframe>
 				<script defer src="https://plasmatrap.com/embed.js"></script>
 			</div>
 			
@@ -217,8 +217,8 @@
 			</div> 
 
 			<div class="friends">
-				<input id="send-msg-box" type="text" value="tell me something!">
-				<button id="sendmsg">send!!</button>
+				<input id="send-msg-box" type="text">
+				<button id="sendmsg" onclick="send()">send!!</button>
 			</div>
 			
 			<h3>
