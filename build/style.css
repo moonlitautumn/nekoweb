@@ -506,3 +506,8 @@ p.sidebar-left{
 .font2 {
     font-family: codethingy;
 }
+.sendmsgfield {
+    border:solid 5px var(--accent);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
