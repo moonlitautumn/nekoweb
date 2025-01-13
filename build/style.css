@@ -85,7 +85,7 @@ li{
 .dynamiciframe {
     border-radius: 10px;
     border-top-left-radius: 0%;
-    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 header{
