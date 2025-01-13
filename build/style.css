@@ -540,7 +540,7 @@ p.sidebar-left{
     border:solid 5px var(--accent);
 }
 .sendmsgbutton:active {
-    transform: scale(1);
+    transform: scale(1.1);
 }
 .backupimg img:before {
     content: ' ';
