@@ -80,6 +80,9 @@ li{
 .borderside:hover {
     border: solid 5px #89b4fa;
     opacity: 1;
+
+}
+.dynamiciframe {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -220,7 +223,8 @@ p.smth{
     height: 250px;
     overflow: scroll;
     opacity: 0.7;
-    
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #statuscafe:hover {
     opacity: 1;
