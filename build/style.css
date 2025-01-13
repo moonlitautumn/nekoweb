@@ -539,3 +539,10 @@ p.sidebar-left{
     transform: scale(1.25);
     border:solid 5px var(--accent);
 }
+.sendmsgbutton:active {
+    transform: scale(1);
+}
+.backupimg img:before {
+    content: ' ';
+    background-image: url(default.png);
+}
