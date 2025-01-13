@@ -518,6 +518,7 @@ p.sidebar-left{
     width: 50%;
     font-size: 3rem;
     margin-right: 3rem;
+    margin-left: 3rem;
 }
 .sendmsgfield:hover {
     transform: scale(1.25);
