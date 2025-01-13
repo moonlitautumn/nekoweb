@@ -510,4 +510,25 @@ p.sidebar-left{
     border:solid 5px var(--accent);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: var(--base);
+    color: var(--text);
+    padding: 15px;
+    font-family: codethingy;
+    transition: transform .15s;
+}
+.sendmsgfield:hover {
+    transform: scale(1.25);
+}
+.sendmsgbutton {
+    border:solid 5px var(--accent);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: var(--base);
+    color: var(--text);
+    padding: 15px;
+    font-family: codethingy;
+    transition: transform .15s;
+}
+.sendmsgbutton:hover {
+    transform: scale(1.25);
 }
