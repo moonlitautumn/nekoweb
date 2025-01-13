@@ -383,6 +383,7 @@ header {
 }
 .iframe-style {
     border: none;
+    height: 6300px;
 }
 .sidebar-left {
     height: 100%;
