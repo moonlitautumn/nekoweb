@@ -21,6 +21,12 @@ function fetchNowPlaying() {
 
             const timeAgo = nowPlaying.date ? calculateTimeAgo(nowPlaying.date.uts) : '(now playing!)'; // Check if date exists
             
+            if (timeAgo == '(now playing!)') {
+                document.getElementById('timeago').className = "flash";
+            } else {
+                document.getElementById('timeago').className = " ";
+            }
+            
             //document.getElementById('songName').textContent = songName;
             document.getElementById('timeago').textContent = timeAgo;
             
