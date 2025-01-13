@@ -484,3 +484,6 @@ p.sidebar-left{
 .pop-out:hover {
     transform: scale(1.25);
 }
+.font2 {
+    font-family:codethingy;
+}
