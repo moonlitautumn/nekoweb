@@ -11,7 +11,7 @@
 	<body>
 		<audio id="ping" src="assets/audio/pc_messagebox.wav"></audio>
 		<script src="scripts/why.js"></script>
-
+		<script src="scripts/sendmenotif.js"></script>
         <style>
             main {
                 padding: 0;
@@ -215,10 +215,17 @@
 				</div>
 				
 			</div> 
+
+			<div class="friends">
+				<input id="send-msg-box" type="text" value="tell me something!">
+				<button id="sendmsg">send!!</button>
+			</div>
+			
 			<h3>
 				Me &lt;&lt;&lt; <span style="color: var(--accent)">✨gay asf✨</span> 🩷💜💙 🩷🤍🩷 (chronically confused about sexuality -w-')<br>
-				<span style="color: var(--overlay1);">also this place is optimized for pc only!!</span>
+				<span style="color: var(--overlay1);" onclick="sendmsg()">also this place is optimized for pc only!!</span>
 			</h3>
+
 
 			<!--visits counter by me!-->
 			<div class="border" style="margin-bottom: 1rem;">
