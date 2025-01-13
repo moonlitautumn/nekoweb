@@ -22,9 +22,11 @@ function fetchNowPlaying() {
             const timeAgo = nowPlaying.date ? calculateTimeAgo(nowPlaying.date.uts) : '(now playing!)'; // Check if date exists
             
             if (timeAgo == '(now playing!)') {
-                document.getElementById('idkidk').classList.add("flash").classList.remove("spinny");
+                document.getElementById('idkidk').classList.add("flash")
+                document.getElementById('idkidk').classList.remove("spinny");
             } else {
-                document.getElementById('idkidk').classList.remove("flash").classList.add("spinny");
+                document.getElementById('idkidk').classList.remove("flash")
+                document.getElementById('idkidk').classList.add("spinny");
             }
             
             //document.getElementById('songName').textContent = songName;
