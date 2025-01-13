@@ -64,6 +64,8 @@ li{
 .border{
     border:solid 5px var(--accent);
     padding:1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .borderside{
@@ -72,10 +74,14 @@ li{
     background-color: #11112b;
     opacity: 0.7;
     width: 160px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .borderside:hover {
     border: solid 5px #89b4fa;
     opacity: 1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 header{
     margin:0;
