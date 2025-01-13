@@ -478,3 +478,9 @@ p.sidebar-left{
         opacity: 1;
     }
 }
+.pop-out {
+    transition: transform .2s;
+}
+.pop-out:hover {
+    transform: scale(1.5);
+}
