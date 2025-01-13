@@ -479,8 +479,8 @@ p.sidebar-left{
     }
 }
 .pop-out {
-    transition: transform .2s;
+    transition: transform .15s;
 }
 .pop-out:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
