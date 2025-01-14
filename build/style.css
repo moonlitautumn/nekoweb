@@ -543,7 +543,7 @@ p.sidebar-left{
     border:solid 5px var(--accent);
 }
 .sendmsgfield:active {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .sendmsgfieldtype {
     transform: scale(1.20);
