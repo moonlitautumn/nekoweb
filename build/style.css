@@ -542,6 +542,9 @@ p.sidebar-left{
     transform: scale(1.25);
     border:solid 5px var(--accent);
 }
+.sendmsgfield:active {
+    transform: scale(1.1);
+}
 .sendmsgfieldtype {
     transform: scale(1.20);
 }
