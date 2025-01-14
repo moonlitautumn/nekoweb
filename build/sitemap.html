@@ -11,6 +11,23 @@
         <link rel="stylesheet" href="sitemap.css">
     </head> 
     <body> 
+        <script type="text/javascript">
+            var imageURLs = [
+                "https://sillyivy.nekoweb.org/assets/imgs/randommc/2024-01-15_20.29.08.png",
+                "https://sillyivy.nekoweb.org/assets/imgs/randommc/2024-01-15_20.29.03.png",
+                "https://sillyivy.nekoweb.org/assets/imgs/randommc/2023-11-19_13.48.55.png",
+                "https://sillyivy.nekoweb.org/assets/imgs/randommc/2023-09-26_15.00.23.png"];
+            function getImageTag() {
+                var img = '<a onmouseenter=\"boop()\" onclick=\"playaudioo()\" href=\"../art-gallery/index.html\" target=\"mainpage\" title=\"click to go to art gallery!\"><img src=\"';
+                var randomIndex = Math.floor(Math.random() * imageURLs.length);
+                img += imageURLs[randomIndex];
+                img += '\" class=\"myimg\"/></a>';
+                return img;
+            }
+        </script>
+        <script type="text/javascript">
+            document.write(getImageTag());
+        </script>
         <main> 
             <style>
                 .border {
@@ -22,10 +39,10 @@
                     border-color: #f5c2e7;
                 }
             </style> <!--make the entire div an onclick() not a link-->
-            <h1 style="text-align: center;">
+            <h1 style="text-align: center; margin-bottom: 4rem;">
                 sitemap! (wip!!)<!--set blog as a subdirectory so it doesnt clutter up the main page and so i can add friend icons later --> 
             </h1> 
-            <div class="sitemap">
+            <div class="sitemap" style="margin-bottom: 4rem;">
                 <details open>
                     <summary><a href="index.html">Home</a></summary>
                     <ul>
