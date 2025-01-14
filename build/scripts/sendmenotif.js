@@ -5,7 +5,8 @@ function send() {
     let txt=document.getElementById("send-msg-box");
     txt.value!=""&&(fetch("https://ntfy.plasmatrap.com/sillyivyluna",{method:"POST",body:txt.value}),txt.value="")
     let soundeffect = document.getElementById('ping');
-    sleep(500);
     soundeffect.play();
+    
+    sleep(1000);
     alert("message sent!");
 };
