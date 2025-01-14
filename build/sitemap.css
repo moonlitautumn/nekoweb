@@ -7,10 +7,13 @@
     padding:1rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: transform .15s;
+    transition: transform .15s, opacity .15s;
+    background-color: var(--base);
+    opacity: 0.8;
 }
 .sitemap:hover {
     transform: scale(1.15);
+    opacity: 1;
 }
 ul {
     font-size:20px;
@@ -19,7 +22,8 @@ ul {
 body {
     color:var(--subtext1);
     font-size:1.6rem;
-    font-weight:400
+    font-weight:400;
+    background: none;
 }
 .myimg {
     max-width: 100%;
