@@ -525,6 +525,9 @@ p.sidebar-left{
     transform: scale(1.25);
     border:solid 5px var(--accent);
 }
+.sendmsgfieldtype {
+    transform: scale(1.20);
+}
 .sendmsgbutton {
     border:solid 5px #6c7086;
     border-radius: 10px;
