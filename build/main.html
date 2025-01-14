@@ -219,6 +219,7 @@
 			<audio id="hovered" src="assets/audio/menu_cursor_1.wav" ></audio>
 			<audio id="yay1" src="assets/audio/menu_decision.wav"></audio>
 			<audio id="hovered1" src="assets/audio/menu_cursor_1.wav" ></audio>
+			<audio id="typing" src="assets/audio/text.wav"></audio>
 			<script type="text/javascript" defer>
 				function tyyy() {
 					let soundeffect2 = document.getElementById('yay');
@@ -238,10 +239,16 @@
 					soundeffect2.volume = 0.5;
     				soundeffect2.play();
 				}
+				let typing = document.getElementById('typing');
+				typing.volume = 0.5;
+				function type() {
+					typing.currentTime = 0;
+    				typing.play();
+				}
 			</script>
 			<h2>>> KEYBOARDSMASH!!</h2>
 			<div class="friends">
-				<input id="send-msg-box" onclick="tyyy1()" onmouseenter="boop1();" oninput="" type="text" class="sendmsgfield">
+				<input id="send-msg-box" onclick="tyyy1()" onmouseenter="boop1();" oninput="type()" type="text" class="sendmsgfield">
 				<button id="sendmsg" onclick="send(); tyyy()" onmouseenter="boop();" class="sendmsgbutton">send!!</button>
 			</div>
 			<h3>
