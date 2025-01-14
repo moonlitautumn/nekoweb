@@ -10,6 +10,7 @@
     transition: transform .15s, opacity .15s;
     background-color: var(--base);
     opacity: 0.8;
+    cursor: pointer;
 }
 .sitemap:hover {
     transform: scale(1.15);
