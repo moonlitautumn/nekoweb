@@ -219,7 +219,13 @@
 			<audio id="hovered" src="assets/audio/menu_cursor_1.wav" ></audio>
 			<audio id="yay1" src="assets/audio/menu_decision.wav"></audio>
 			<audio id="hovered1" src="assets/audio/menu_cursor_1.wav" ></audio>
+			
 			<audio id="typing" src="assets/audio/text.wav"></audio>
+			<audio id="typing2" src="assets/audio/text.wav"></audio>
+			<audio id="typing3" src="assets/audio/text.wav"></audio>
+			<audio id="typing4" src="assets/audio/text.wav"></audio>
+			<audio id="typing5" src="assets/audio/text.wav"></audio>
+			
 			<script type="text/javascript" defer>
 				function tyyy() {
 					let soundeffect2 = document.getElementById('yay');
@@ -241,10 +247,26 @@
 				}
 				function typee() {
 					let typing = document.getElementById('typing');
+					let typing2 = document.getElementById('typing');
+					let typing3 = document.getElementById('typing');
+					let typing4 = document.getElementById('typing');
+					let typing5 = document.getElementById('typing');
 					typing.volume = 0.5;
-					typing.pause()
-					typing.currentTime = 0;
-    				typing.play();
+					typing2.volume = 0.5;
+					typing3.volume = 0.5;
+					typing4.volume = 0.5;
+					typing5.volume = 0.5;
+    				if (typing.paused) {
+						typing.play();
+					} else if (typing2.paused){
+						typing2.play();
+					} else if (typing3.paused){
+						typing3.play();
+					} else if (typing4.paused){
+						typing4.play();
+					} else {
+						typing5.play();
+					}
 				}
 			</script>
 			<h2>>> KEYBOARDSMASH!!</h2>
