@@ -26,3 +26,7 @@ body {
     height: 100%;
     object-fit: contain;
 }
+.bkg {
+    background-position: center;
+    background-size: cover;
+}
