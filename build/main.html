@@ -225,6 +225,9 @@
 			<audio id="typing3" src="assets/audio/text.wav"></audio>
 			<audio id="typing4" src="assets/audio/text.wav"></audio>
 			<audio id="typing5" src="assets/audio/text.wav"></audio>
+			<audio id="typing6" src="assets/audio/text.wav"></audio>
+			<audio id="typing7" src="assets/audio/text.wav"></audio>
+			<audio id="typing8" src="assets/audio/text.wav"></audio>
 			
 			<script type="text/javascript" defer>
 				function tyyy() {
@@ -251,12 +254,18 @@
 					let typing3 = document.getElementById('typing3');
 					let typing4 = document.getElementById('typing4');
 					let typing5 = document.getElementById('typing5');
+					let typing6 = document.getElementById('typing6');
+					let typing7 = document.getElementById('typing7');
+					let typing8 = document.getElementById('typing8');
 					typing.volume = 0.5;
 					typing2.volume = 0.5;
 					typing3.volume = 0.5;
 					typing4.volume = 0.5;
 					typing5.volume = 0.5;
-    				if (typing.paused) {
+    				typing6.volume = 0.5;
+					typing7.volume = 0.5;
+					typing8.volume = 0.5;
+					if (typing.paused) {
 						typing.play();
 					} else if (typing2.paused){
 						typing2.play();
@@ -264,8 +273,14 @@
 						typing3.play();
 					} else if (typing4.paused){
 						typing4.play();
-					} else {
+					} else if (typing5.paused){
 						typing5.play();
+					} else if (typing6.paused){
+						typing6.play();
+					} else if (typing7.paused){
+						typing7.play();
+					} else {
+						typing8.play();
 					}
 				}
 			</script>
