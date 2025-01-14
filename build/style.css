@@ -66,6 +66,10 @@ li{
     padding:1rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.2s;
+}
+.border:active {
+    transform: scale(0.9);
 }
 
 .borderside{
@@ -76,11 +80,15 @@ li{
     width: 160px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.2s;
 }
 .borderside:hover {
     border: solid 5px #89b4fa;
     opacity: 1;
 
+}
+.borderside:active {
+    transform: scale(0.9);
 }
 .plasmatrap {
     border:solid 5px #86746c;
