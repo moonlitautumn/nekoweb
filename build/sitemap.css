@@ -26,7 +26,8 @@ body {
     height: 100%;
     object-fit: contain;
 }
-.bkg {
+html {
+    background-image: url("assets/imgs/randommc/2024-01-15_20.29.08.png");
     background-position: center;
     background-size: cover;
 }
