@@ -3,13 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="gay internet girl webdev person's webbedsite">
-		<link rel="icon" href="https://raw.githubusercontent.com/moonlitautumn/webbb/master/public/favicon.ico">
+		<link rel="icon" href="/assets/imgs/cutecar.ico">
 		<title>waiting for something to happen...?</title>
 		<link rel="stylesheet" href="style.css">
         <base target="_parent">
 	</head>   
 	<body>
 		<audio id="ping" src="assets/audio/pc_messagebox.wav"></audio>
+		<script src="hit-counter/js/script.js"></script>
 		<script src="scripts/why.js"></script>
 		<script src="scripts/sendmenotif.js" defer></script>
         <style>
@@ -75,7 +76,7 @@
 			</noscript>			
 			<div class="border"> <!--style="margin-bottom: 1rem;"-->
 				<h2 class="playlist">>> my mix! . ݁₊ ⊹ . ݁˖ . ݁</h2>
-				<iframe src="https://cosyivy.xyz/iframes/musicplayer/music.html?list=PLrEiDOnraDDvGMEp21qjcby79c5BXlSDe&shuffle" style="width: calc(100% - 16px * 2);height: 108px;display: block;margin:16px;">
+				<iframe src="https://cosyivy.xyz/iframes/musicplayer/music.html?list=PLrEiDOnraDDvGMEp21qjcby79c5BXlSDe&shuffle" style="width: calc(100% - 16px * 2);height: 108px;display: block;margin:16px;" class="pop-out">
 				</iframe>
 				<p class="playlist"># tyyyy <a href="https://lilithdev.neocities.org">lilithdev!</a><span style="color: var(--overlay1)"> /* btw i LOVE your website! */</span></p>	
 			</div>
@@ -124,6 +125,8 @@
 				</p>  
 			</div>
 
+			<h3 class="flash">Ps: run "curl -sI https://cosyivy.xyz | grep whatami"</h3>
+
 			<div class="border" id="links">
 				<h2>>> random hyperlinks 
 					<img src="assets/imgs/spinny_cat.gif.gif" height="32px" width="32px"><img src="assets/imgs/spinny_cat.gif.gif" height="32px" width="32px">
@@ -133,10 +136,12 @@
 				</h2>
 				<div class="coolstuffsss" style="padding-top: 0; padding-bottom: 0;">
 					<div style="width: max-content; padding-top: 1rem;">
-						<p> 
+						<p style="margin-top: 0;"> 
 							<a href="https://git.gay/cosyivy">> my new git.gay page!!</a><br> 
-							<a href="https://github.com/moonlitautumn/">> my (old) github page</a>
 						</p> 
+						<p>
+							<a href="https://github.com/moonlitautumn/">> my (old) github page</a>
+						</p>
 						<p>
 							<a href="https://anilist.co/user/moonlitivy/">> my anilist!</a> 
 						</p> 
@@ -144,7 +149,7 @@
 							> my bsky tag is this websites url ^^
 						</p>
 					</div>
-					<div id="vocaring">
+					<div id="vocaring" style="padding-left: 2.5rem;" class="pop-out">
 						<script src="https://webring.adilene.net/widget.js">
 						</script>
 					</div>
@@ -154,7 +159,7 @@
 				</p>
 				<p>	
 					# for hacker girls and queer fellas you can... <br>
-					> email me at <span style="color: var(--accent);">sillyivyluna[at]proton[dot]me</span> <br>
+					> email me at <span style="color: var(--accent);">ivy [at] cosyivy [dot] xyz</span> <br>
 					> XMPP me at <span style="color: var(--accent);">ivy@404.city</span><br>
 				</p>
 				<p>	
@@ -259,7 +264,7 @@
     				soundeffect2.play();
 				}
 			</script>
-			<h2>>> ask me something! :3</h2>
+			<h2>>> KEYBOARDSMASH!! >:3</h2>
 			<div class="friends">
 				<input id="send-msg-box" onclick="tyyy1()" onmouseenter="boop1();" oninput="typee()" type="text" class="sendmsgfield">
 				<button id="sendmsg" onclick="send(); tyyy()" onmouseenter="boop();" class="sendmsgbutton">send!!</button>
@@ -313,13 +318,17 @@
 					>> webbedsite stats & updates!
 				</h2>
 				<p>
-					<span style="color: var(--accent); font-size: 2.4rem; font-weight: 500;" id="stats">
-						loading... 
-					</span>	
-					visits WOWIE! 
+					<span style="color: var(--accent); font-size: 2.4rem; font-weight: 500;" id="hit-count">loading...</span> 
+					visits on <a href="https://cosyivy.xyz">cosyivy.xyz</a> WHOA!! 
 					<span style="color: var(--overlay1)">
 						(pls visit this website more i NEED more attention aaaaaa)
 					</span>
+				</p>
+				<p>
+					<span style="color: var(--accent); font-size: 2.4rem; font-weight: 500;" id="stats">
+						loading... 
+					</span>	
+					nekoweb mirror visits! 
 				</p>
 				<hr class="solid">
 				<div class="innerscroll">
@@ -416,14 +425,12 @@
 				<hr class="solid">
 				<div class="innerscroll">
 					<p>
-						- add custom 404 page to cosyivy.xyz
 						- try mc modding <br>
 						- maybe start learning godot again :3 <br>
 						- fix webrings! <br>
 						- maybe make a sharky thingy??? <br>
 						- try 3d moddeling <br>
 						- maybe add mirrors list <br>
-						- fix visits counter to not use the nekoweb api (or maybe keep it in a separate category)<br>
 						- fix all links on the main page <br>
 						- maybe add a notice on nekoweb that talks about how the page has migrated <br>
 						- fix all my social media links to point to cosyivy.xyz <br>
@@ -440,7 +447,6 @@
 					</p>
 				</div>
 			</div> 
-			<h3 class="flash">Ps: run "curl https://cosyivy.xyz/compliment.txt"</h3>
 			<h3>
 				>> non clearnet ways to connect :> <br><span style="color: var(--overlay1);">/* this WILL be broken! (for now) */</span>
 			</h3>
