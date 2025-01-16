@@ -521,6 +521,12 @@ p.sidebar-left{
 .pop-out:hover {
     transform: scale(1.25);
 }
+.pop-out2 {
+    transition: transform .15s;
+}
+.pop-out2:hover {
+    transform: scale(1.1);
+}
 .font2 {
     font-family: codethingy;
 }
