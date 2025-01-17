@@ -527,6 +527,16 @@ p.sidebar-left{
 .pop-out2:hover {
     transform: scale(1.05);
 }
+.pop-out3 {
+    transition: transform .15s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pop-out3:hover {
+    transform: scale(1.05);
+}
+.pop-out3:active {
+    transform: scale(1.025);
+}
 .font2 {
     font-family: codethingy;
 }
@@ -575,4 +585,19 @@ p.sidebar-left{
 .backupimg img:before {
     content: ' ';
     background-image: url(default.png);
+}
+.spinnn {
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform-style: preserve-3d;
+}
+@keyframes spinner {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
 }
